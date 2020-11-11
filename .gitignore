@@ -1,6 +1,7 @@
 .idea/
-.package-lock.json
+package-lock.json
 node_modules/
 !app/typings/
 run/
 test/
+typings/
