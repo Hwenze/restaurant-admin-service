@@ -1,26 +1,24 @@
 'use strict';
 
-module.exports = () => {
-    return async function tokenHandler(ctx, next) {
-        const { session = {}, request = {} } = ctx;
-        const path = request.path;
-        const { userinfo = {} } = session;
-        if(path.indexOf('/login') === 0){
-            await next();
-        }else{
-            console.log('userinfo----', userinfo);
-            // 可能要控制不同场景
+const { cb } = require('../utils');
+const { RETURN_CODE } = require('../utils/enum');
+
+module.exports = (options, app) => {
+    return async function (ctx, next) {
+        const token = ctx.request.header.token;
+        if (token) {
             try {
-                if (userinfo && userinfo.id) {
-                    await next();
-                } else {
-                    ctx.body = '无权访问';
-                }
+                ctx.app.jwt.verify(token, app.config.jwt.secret); // 验证token 
+                await next();
             } catch (error) {
-                ctx.body = '服务器出错了';
+                ctx.status = 401;
+                ctx.body = cb({ code: 401, msg: RETURN_CODE['401'] });
+                return;
             }
-            
+        } else {
+            ctx.status = 400;
+            ctx.body = cb({ code: 400, msg: RETURN_CODE['400'] });
+            return;
         }
-        
     }
 }

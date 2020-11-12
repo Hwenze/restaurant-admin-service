@@ -4,6 +4,7 @@
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
-  const { router, controller } = app;
-  router.get('/user', controller.user.index);
+  const { router, controller, middleware } = app;
+  const jwt = middleware.tokenHandler(app.config.jwt);
+  router.get('/user', jwt, controller.user.index);
 };

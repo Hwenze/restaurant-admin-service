@@ -1,5 +1,5 @@
-2020-11-11 15:23:03,018 ERROR 3669 [-/127.0.0.1/-/2ms GET /] nodejs.ReferenceError: app is not defined
-    at HomeController.index (/Volumes/projects/restaurant-admin-service/app/controller/home.js:9:18)
+2020-11-12 14:26:54,984 ERROR 2351 [-/127.0.0.1/-/6ms GET /login] nodejs.TypeError: Cannot read property 'callback' of undefined
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:26:32)
     at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
     at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
     at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
@@ -10,72 +10,11 @@
     at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
     at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
 
-pid: 3669
+pid: 2351
 hostname: fanhongkaideMacBook-Pro.local
 
-2020-11-11 15:23:50,418 ERROR 3676 [-/127.0.0.1/-/5ms GET /] nodejs.TypeError: Cannot read property 'get' of undefined
-    at HomeController.index (/Volumes/projects/restaurant-admin-service/app/controller/home.js:9:34)
-    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
-    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
-    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
-    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
-    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
-    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
-    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
-
-pid: 3676
-hostname: fanhongkaideMacBook-Pro.local
-
-2020-11-11 15:23:59,625 ERROR 3676 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'get' of undefined
-    at HomeController.index (/Volumes/projects/restaurant-admin-service/app/controller/home.js:9:34)
-    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
-    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
-    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
-    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
-    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
-    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
-    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
-
-pid: 3676
-hostname: fanhongkaideMacBook-Pro.local
-
-2020-11-11 15:52:26,441 ERROR 3862 nodejs.ClusterClientNoResponseError: client no response in 112145ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
-    at Timeout._onTimeout (/Volumes/projects/restaurant-admin-service/node_modules/cluster-client/lib/leader.js:77:23)
-    at listOnTimeout (internal/timers.js:554:17)
-    at processTimers (internal/timers.js:497:7)
-name: "ClusterClientNoResponseError"
-pid: 3862
-hostname: fanhongkaideMacBook-Pro.local
-
-2020-11-11 15:57:18,919 ERROR 3862 nodejs.ClusterClientNoResponseError: client no response in 252636ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
-    at Timeout._onTimeout (/Volumes/projects/restaurant-admin-service/node_modules/cluster-client/lib/leader.js:77:23)
-    at listOnTimeout (internal/timers.js:554:17)
-    at processTimers (internal/timers.js:497:7)
-name: "ClusterClientNoResponseError"
-pid: 3862
-hostname: fanhongkaideMacBook-Pro.local
-
-2020-11-11 16:14:46,486 ERROR 4011 [-/127.0.0.1/-/8ms GET /] nodejs.ReferenceError: app is not defined
-    at UserService.queryInfoByUserId (/Volumes/projects/restaurant-admin-service/app/service/user.js:6:17)
-    at HomeController.index (/Volumes/projects/restaurant-admin-service/app/controller/home.js:10:41)
-    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
-    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
-    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
-    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
-    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
-    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
-
-pid: 4011
-hostname: fanhongkaideMacBook-Pro.local
-
-2020-11-11 16:24:04,566 ERROR 4055 [-/127.0.0.1/-/7ms GET /?uid=1] nodejs.ReferenceError: result is not defined
-    at HomeController.index (/Volumes/projects/restaurant-admin-service/app/controller/home.js:10:5)
+2020-11-12 14:26:54,985 ERROR 2351 [-/127.0.0.1/-/8ms GET /login] nodejs.ReferenceError: cb is not defined
+    at /Volumes/projects/restaurant-admin-service/app/middleware/errorHandler.js:19:21
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
     at async /Volumes/projects/restaurant-admin-service/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
     at async xframe (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
@@ -86,21 +25,148 @@ hostname: fanhongkaideMacBook-Pro.local
     at async bodyParser (/Volumes/projects/restaurant-admin-service/node_modules/koa-bodyparser/index.js:95:5)
     at async /Volumes/projects/restaurant-admin-service/node_modules/koa-static-cache/index.js:41:56
 
-pid: 4055
+pid: 2351
 hostname: fanhongkaideMacBook-Pro.local
 
-2020-11-11 16:43:51,771 ERROR 4102 [-/127.0.0.1/-/2ms GET /user] nodejs.TypeError: Cannot read property 'id' of null
-    at tokenHandler (/Volumes/projects/restaurant-admin-service/app/middleware/tokenHandler.js:14:26)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa/node_modules/koa-compose/index.js:42:32)
-    at /Volumes/projects/restaurant-admin-service/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa/node_modules/koa-compose/index.js:42:32)
-    at i18n (/Volumes/projects/restaurant-admin-service/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa/node_modules/koa-compose/index.js:42:32)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
-    at dta (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/dta.js:12:12)
-    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
-    at xframe (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+2020-11-12 14:28:04,134 ERROR 2379 [-/127.0.0.1/-/5ms GET /login] nodejs.TypeError: Cannot read property 'callback' of undefined
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:26:32)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
+    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
 
-pid: 4102
+pid: 2379
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:29:03,445 ERROR 2402 [-/127.0.0.1/-/5ms GET /login] nodejs.TypeError: app.config.middleware.callback is not a function
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:26:39)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
+    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
+
+pid: 2402
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:29:08,804 ERROR 2402 [-/127.0.0.1/-/0ms GET /login] nodejs.TypeError: app.config.middleware.callback is not a function
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:26:39)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
+    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
+
+pid: 2402
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:29:18,551 ERROR 2402 [-/127.0.0.1/-/1ms GET /login] nodejs.TypeError: app.config.middleware.callback is not a function
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:26:39)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
+    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
+
+pid: 2402
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:30:21,916 ERROR 2454 [-/127.0.0.1/-/4ms GET /login] nodejs.TypeError: Cannot read property 'tokenHandler' of undefined
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:26:32)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Volumes/projects/restaurant-admin-service/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at next (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:45:18)
+    at /Volumes/projects/restaurant-admin-service/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:44:32)
+    at /Volumes/projects/restaurant-admin-service/node_modules/koa-compose/index.js:36:12
+
+pid: 2454
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:36:40,080 ERROR 2638 [-/127.0.0.1/-/8ms GET /login] nodejs.TypeError: The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+    at Function.byteLength (buffer.js:728:11)
+    at respond (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:272:25)
+    at handleResponse (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:166:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+code: "ERR_INVALID_ARG_TYPE"
+pid: 2638
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:36:42,310 ERROR 2638 [-/127.0.0.1/-/1ms GET /login] nodejs.TypeError: The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+    at Function.byteLength (buffer.js:728:11)
+    at respond (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:272:25)
+    at handleResponse (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:166:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+code: "ERR_INVALID_ARG_TYPE"
+pid: 2638
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:37:13,734 ERROR 2647 [-/127.0.0.1/-/7ms GET /login] nodejs.TypeError: The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+    at Function.byteLength (buffer.js:728:11)
+    at respond (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:272:25)
+    at handleResponse (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:166:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+code: "ERR_INVALID_ARG_TYPE"
+pid: 2647
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:37:14,288 ERROR 2647 [-/127.0.0.1/-/0ms GET /login] nodejs.TypeError: The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+    at Function.byteLength (buffer.js:728:11)
+    at respond (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:272:25)
+    at handleResponse (/Volumes/projects/restaurant-admin-service/node_modules/koa/lib/application.js:166:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+code: "ERR_INVALID_ARG_TYPE"
+pid: 2647
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:48:20,167 ERROR 2745 [-/127.0.0.1/-/22ms GET /login?username=admin&password=123456] nodejs.ReferenceError: Cannot access 'userinfo' before initialization
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:39:36)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Volumes/projects/restaurant-admin-service/app/middleware/errorHandler.js:7:13
+    at async /Volumes/projects/restaurant-admin-service/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Volumes/projects/restaurant-admin-service/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Volumes/projects/restaurant-admin-service/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Volumes/projects/restaurant-admin-service/node_modules/koa-bodyparser/index.js:95:5)
+
+pid: 2745
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:52:20,624 ERROR 2350 nodejs.ClusterClientNoResponseError: client no response in 70845ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Volumes/projects/restaurant-admin-service/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 2350
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-12 14:56:29,814 ERROR 2350 nodejs.ClusterClientNoResponseError: client no response in 209297ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Volumes/projects/restaurant-admin-service/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 2350
 hostname: fanhongkaideMacBook-Pro.local
 

@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1605063566141_1968';
 
   // 中间件
-  config.middleware = ['tokenHandler'];
+  config.middleware = ['errorHandler'];
 
   // 服务端口号
   config.cluster = {
@@ -37,6 +37,12 @@ module.exports = appInfo => {
       database: 'restaurant',
     }
   };
+
+  config.jwt = {
+    // key
+    secret: 'restaurant',
+    ignore: ['/login']
+  }
 
   // add your user config here
   const userConfig = {
