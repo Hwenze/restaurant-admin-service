@@ -23,10 +23,28 @@ module.exports = appInfo => {
     listen: {
       path: '',
       port: 8080,
-      hostname: '0.0.0.0',
+      hostname: 'localhost',
     }
   };
+  // 配置指定的前端地址
+  config.cors = {
+    // origin: '*',
+    
+    origin: ctx => ctx.get('origin'),
+    // allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+    // 下面这条加上才能共享跨域session，同时前端ajax请求也要加上响应的参数
+    credentials: true,
+  };
 
+  config.security = {
+    // 关闭csrf验证
+    csrf: {
+      enable: false,
+      ignoreJSON: true
+    },
+    // 白名单
+    // domainWhiteList: ['*']
+  }
   // sql配置
   config.mysql = {
     client: {
