@@ -1,1 +1,106 @@
 2020-11-16 00:00:01,150 INFO 5776 [egg-logrotator] agent logger reload: got log-reload message
+2020-11-16 11:08:45,495 INFO 15720 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:08:45,513 INFO 15720 [egg:core] dump config after load, 15ms
+2020-11-16 11:08:45,551 INFO 15720 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:08:45,551 INFO 15720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:08:45,551 INFO 15720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:08:45,551 INFO 15720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:08:45,551 INFO 15720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:08:45,551 INFO 15720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:08:45,552 INFO 15720 [egg-watcher:agent] watcher start success
+2020-11-16 11:08:45,576 INFO 15720 [egg:core] dump config after ready, 23ms
+2020-11-16 11:10:10,242 INFO 22820 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:10:10,260 INFO 22820 [egg:core] dump config after load, 15ms
+2020-11-16 11:10:10,300 INFO 22820 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:10:10,300 INFO 22820 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:10:10,300 INFO 22820 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:10:10,300 INFO 22820 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:10:10,300 INFO 22820 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:10:10,301 INFO 22820 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:10:10,301 INFO 22820 [egg-watcher:agent] watcher start success
+2020-11-16 11:10:10,335 INFO 22820 [egg:core] dump config after ready, 28ms
+2020-11-16 11:28:55,876 INFO 15348 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:28:55,895 INFO 15348 [egg:core] dump config after load, 15ms
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:28:55,934 INFO 15348 [egg-watcher:agent] watcher start success
+2020-11-16 11:28:55,964 INFO 15348 [egg:core] dump config after ready, 25ms
+2020-11-16 11:30:02,904 INFO 8236 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:30:02,922 INFO 8236 [egg:core] dump config after load, 15ms
+2020-11-16 11:30:02,962 INFO 8236 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:30:02,962 INFO 8236 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:30:02,962 INFO 8236 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:30:02,962 INFO 8236 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:30:02,963 INFO 8236 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:30:02,963 INFO 8236 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:30:02,963 INFO 8236 [egg-watcher:agent] watcher start success
+2020-11-16 11:30:02,995 INFO 8236 [egg:core] dump config after ready, 27ms
+2020-11-16 11:33:50,537 INFO 8720 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:33:50,554 INFO 8720 [egg:core] dump config after load, 14ms
+2020-11-16 11:33:50,588 INFO 8720 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:33:50,588 INFO 8720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:33:50,589 INFO 8720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:33:50,589 INFO 8720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:33:50,589 INFO 8720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:33:50,589 INFO 8720 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:33:50,589 INFO 8720 [egg-watcher:agent] watcher start success
+2020-11-16 11:33:50,617 INFO 8720 [egg:core] dump config after ready, 24ms
+2020-11-16 11:34:00,247 INFO 18656 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:34:00,264 INFO 18656 [egg:core] dump config after load, 14ms
+2020-11-16 11:34:00,303 INFO 18656 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:34:00,303 INFO 18656 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:34:00,303 INFO 18656 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:34:00,303 INFO 18656 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:34:00,303 INFO 18656 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:34:00,303 INFO 18656 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:34:00,304 INFO 18656 [egg-watcher:agent] watcher start success
+2020-11-16 11:34:00,331 INFO 18656 [egg:core] dump config after ready, 22ms
+2020-11-16 11:36:01,509 INFO 10384 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:36:01,530 INFO 10384 [egg:core] dump config after load, 16ms
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:36:01,562 INFO 10384 [egg-watcher:agent] watcher start success
+2020-11-16 11:36:01,590 INFO 10384 [egg:core] dump config after ready, 22ms
+2020-11-16 11:38:24,416 INFO 17372 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:38:24,439 INFO 17372 [egg:core] dump config after load, 18ms
+2020-11-16 11:38:24,475 INFO 17372 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:38:24,475 INFO 17372 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:38:24,475 INFO 17372 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:38:24,475 INFO 17372 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:38:24,476 INFO 17372 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:38:24,476 INFO 17372 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:38:24,476 INFO 17372 [egg-watcher:agent] watcher start success
+2020-11-16 11:38:24,506 INFO 17372 [egg:core] dump config after ready, 25ms
+2020-11-16 11:40:59,407 INFO 14468 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:40:59,428 INFO 14468 [egg:core] dump config after load, 16ms
+2020-11-16 11:40:59,461 INFO 14468 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:40:59,461 INFO 14468 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:40:59,461 INFO 14468 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:40:59,462 INFO 14468 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:40:59,462 INFO 14468 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:40:59,462 INFO 14468 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:40:59,462 INFO 14468 [egg-watcher:agent] watcher start success
+2020-11-16 11:40:59,491 INFO 14468 [egg:core] dump config after ready, 23ms
+2020-11-16 11:48:34,346 WARN 14468 [agent:development] reload worker because D:\HongZe-studio\restaurant-admin-service\config\config.default.js change
+2020-11-16 11:48:34,135 INFO 14468 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"D:\\HongZe-studio\\restaurant-admin-service\\config\\config.default.js","stat":{"dev":2115590597,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":1407374883788918,"size":1487,"atimeMs":1605498514126.1514,"mtimeMs":1605498514126.1514,"ctimeMs":1605498514126.1514,"birthtimeMs":1605493114722.5718,"atime":"2020-11-16T03:48:34.126Z","mtime":"2020-11-16T03:48:34.126Z","ctime":"2020-11-16T03:48:34.126Z","birthtime":"2020-11-16T02:18:34.723Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-11-16 11:48:34,138 INFO 14468 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"D:\\HongZe-studio\\restaurant-admin-service\\config\\config.default.js","stat":{"dev":2115590597,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":1407374883788918,"size":1487,"atimeMs":1605498514126.1514,"mtimeMs":1605498514126.1514,"ctimeMs":1605498514126.1514,"birthtimeMs":1605493114722.5718,"atime":"2020-11-16T03:48:34.126Z","mtime":"2020-11-16T03:48:34.126Z","ctime":"2020-11-16T03:48:34.126Z","birthtime":"2020-11-16T02:18:34.723Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-11-16 11:48:34,138 INFO 14468 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"D:\\HongZe-studio\\restaurant-admin-service\\config\\config.default.js","stat":{"dev":2115590597,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":1407374883788918,"size":1487,"atimeMs":1605498514126.1514,"mtimeMs":1605498514126.1514,"ctimeMs":1605498514126.1514,"birthtimeMs":1605493114722.5718,"atime":"2020-11-16T03:48:34.126Z","mtime":"2020-11-16T03:48:34.126Z","ctime":"2020-11-16T03:48:34.126Z","birthtime":"2020-11-16T02:18:34.723Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-11-16 11:48:35,625 WARN 14468 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-11-16 11:48:44,455 INFO 11888 [egg:logger] init all loggers with options: {"dir":"D:\\HongZe-studio\\restaurant-admin-service\\logs\\restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-16 11:48:44,475 INFO 11888 [egg:core] dump config after load, 15ms
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher] Start watching: ["D:\\HongZe-studio\\restaurant-admin-service\\app","D:\\HongZe-studio\\restaurant-admin-service\\config","D:\\HongZe-studio\\restaurant-admin-service\\mocks","D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy","D:\\HongZe-studio\\restaurant-admin-service\\app.js"]
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app"
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\config"
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks"
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\mocks_proxy"
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher] Start watching: "D:\\HongZe-studio\\restaurant-admin-service\\app.js"
+2020-11-16 11:48:44,506 INFO 11888 [egg-watcher:agent] watcher start success
+2020-11-16 11:48:44,534 INFO 11888 [egg:core] dump config after ready, 22ms
