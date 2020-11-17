@@ -71,10 +71,44 @@ const Price = (num) => {
     return (Math.round(num * 100) / 100);
 }
 
+// 过滤掉无用的参数
+const filterQuery = (target, params) => {
+    let query = {
+        page: {},
+        column: {}
+    };
+    let { number = [], string = [] } = params;
+    if (!number || !Array.isArray(number)) {
+        number = [];
+    }
+    if (!string || !Array.isArray(string)) {
+        string = [];
+    }
+    const page = ['current', 'pageSize'];
+    for (let key in target) {
+        if (target[key]) {
+            if (number.indexOf(key) !== -1 && !query.hasOwnProperty(key)) {
+                query.column[key] = Number(target[key]);
+            }
+            if (page.indexOf(key) !== -1) {
+                query.page[key] = key === 'current' ? Number(target[key]) - 1 : Number(target[key]);
+            }
+            if (string.indexOf(key) !== -1 && !query.hasOwnProperty(key)) {
+                query.column[key] = target[key];
+            }
+        }
+    }
+    return query;
+}
+
 
 
 module.exports = {
     cb,
     TREE,
-    CATEGORYTREE
+    CATEGORYTREE,
+    filterQuery,
 };
+
+
+

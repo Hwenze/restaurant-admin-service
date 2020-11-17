@@ -1,0 +1,80 @@
+2020-11-16 13:35:01,406 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 1826372ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 19:22:20,458 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 2850678ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 19:37:26,775 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 886794ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 20:24:34,451 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 2307618ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 20:28:40,565 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 246111ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 20:39:18,118 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 637546ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 20:54:31,459 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 913335ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-16 22:02:04,032 ERROR 4383 nodejs.ClusterClientNoResponseError: client no response in 292061ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4383
+hostname: fanhongkaideMacBook-Pro.local
+

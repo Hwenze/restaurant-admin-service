@@ -29,7 +29,7 @@ module.exports = appInfo => {
   // 配置指定的前端地址
   config.cors = {
     // origin: '*',
-    
+
     origin: ctx => ctx.get('origin'),
     // allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
     // 下面这条加上才能共享跨域session，同时前端ajax请求也要加上响应的参数
@@ -55,6 +55,15 @@ module.exports = appInfo => {
       database: 'restaurant',
     }
   };
+
+  // session
+  config.session = {
+    key: 'EGG_SESS',
+    maxAge: 3 * 3600 * 1000, // 一周
+    httpOnly: true,
+    encrypt: true,
+    renew: true   //每次刷新页面的时候 session都会被延期
+  }
 
   config.jwt = {
     // key
