@@ -20,6 +20,18 @@ class CommonService extends Service {
       ctx.body = cb({ code: 401 });
     }
   }
+
+  // 查询用户协议
+  async queryuserAgreement(id) {
+    const { app } = this;
+    return await app.mysql.get('user_agreement', { id });
+  }
+
+  // 更改用户协议
+  async updateuserAgreement(agreement) {
+    const { app } = this;
+    return await app.mysql.update('user_agreement',{ id: 1, agreement });
+  }
 }
 
 module.exports = CommonService;

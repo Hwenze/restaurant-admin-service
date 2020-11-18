@@ -5,11 +5,14 @@ node_modules/
 run/
 test/
 typings/
+*typings/
 logs/
 .DS_Store
 .happypack/
 node_modules/
 npm-debug.log
+*/log
+*.log
 .idea/
 dist
 static
