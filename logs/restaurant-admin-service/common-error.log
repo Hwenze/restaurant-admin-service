@@ -108,3 +108,24 @@ name: "ClusterClientNoResponseError"
 pid: 4120
 hostname: fanhongkaideMacBook-Pro.local
 
+2020-11-19 00:39:38,821 ERROR 13535 [-/127.0.0.1/-/18ms POST /login] nodejs.TypeError: ctx.service.user.queryRoleInfoByRoleId is not a function
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:53:51)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13535
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 00:40:14,902 ERROR 13567 [-/127.0.0.1/-/19ms POST /login] nodejs.TypeError: ctx.service.user.queryRoleInfoByRoleId is not a function
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:53:51)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13567
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 00:40:31,068 ERROR 13579 [-/127.0.0.1/-/17ms POST /login] nodejs.TypeError: ctx.service.user.queryRoleInfoByRoleId is not a function
+    at HomeController.login (/Volumes/projects/restaurant-admin-service/app/controller/home.js:53:51)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13579
+hostname: fanhongkaideMacBook-Pro.local
+

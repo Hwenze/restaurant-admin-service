@@ -3885,3 +3885,633 @@
 2020-11-18 22:52:38,933 INFO 11252 [egg-watcher:application] watcher start success
 2020-11-18 22:52:38,936 INFO 11252 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 22:52:38 GMT+0800 (GMT+08:00)
 2020-11-18 22:52:38,942 INFO 11252 [egg:core] dump config after ready, 4ms
+2020-11-18 23:14:46,778 INFO 12094 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:14:46,809 INFO 12094 [egg-multipart] stream mode enable
+2020-11-18 23:14:46,809 INFO 12094 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:14:46,948 INFO 12094 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:14:46,950 INFO 12094 [egg-security] use methodnoallow middleware
+2020-11-18 23:14:46,951 INFO 12094 [egg-security] use noopen middleware
+2020-11-18 23:14:46,952 INFO 12094 [egg-security] use nosniff middleware
+2020-11-18 23:14:46,953 INFO 12094 [egg-security] use xssProtection middleware
+2020-11-18 23:14:46,954 INFO 12094 [egg-security] use xframe middleware
+2020-11-18 23:14:46,955 INFO 12094 [egg-security] use dta middleware
+2020-11-18 23:14:46,955 INFO 12094 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:14:46,979 INFO 12094 [egg:core] dump config after load, 8ms
+2020-11-18 23:14:46,994 INFO 12094 [egg-watcher:application] watcher start success
+2020-11-18 23:14:46,996 INFO 12094 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:14:46 GMT+0800 (GMT+08:00)
+2020-11-18 23:14:47,002 INFO 12094 [egg:core] dump config after ready, 4ms
+2020-11-18 23:16:04,707 INFO 12120 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:16:04,731 INFO 12120 [egg-multipart] stream mode enable
+2020-11-18 23:16:04,731 INFO 12120 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:16:04,807 INFO 12120 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:16:04,809 INFO 12120 [egg-security] use methodnoallow middleware
+2020-11-18 23:16:04,809 INFO 12120 [egg-security] use noopen middleware
+2020-11-18 23:16:04,810 INFO 12120 [egg-security] use nosniff middleware
+2020-11-18 23:16:04,810 INFO 12120 [egg-security] use xssProtection middleware
+2020-11-18 23:16:04,812 INFO 12120 [egg-security] use xframe middleware
+2020-11-18 23:16:04,813 INFO 12120 [egg-security] use dta middleware
+2020-11-18 23:16:04,813 INFO 12120 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:16:04,825 INFO 12120 [egg:core] dump config after load, 4ms
+2020-11-18 23:16:04,841 INFO 12120 [egg-watcher:application] watcher start success
+2020-11-18 23:16:04,843 INFO 12120 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:16:04 GMT+0800 (GMT+08:00)
+2020-11-18 23:16:04,848 INFO 12120 [egg:core] dump config after ready, 4ms
+2020-11-18 23:32:13,673 INFO 12248 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:32:13,705 INFO 12248 [egg-multipart] stream mode enable
+2020-11-18 23:32:13,705 INFO 12248 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:32:13,880 INFO 12248 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:32:13,882 INFO 12248 [egg-security] use methodnoallow middleware
+2020-11-18 23:32:13,885 INFO 12248 [egg-security] use noopen middleware
+2020-11-18 23:32:13,886 INFO 12248 [egg-security] use nosniff middleware
+2020-11-18 23:32:13,887 INFO 12248 [egg-security] use xssProtection middleware
+2020-11-18 23:32:13,887 INFO 12248 [egg-security] use xframe middleware
+2020-11-18 23:32:13,888 INFO 12248 [egg-security] use dta middleware
+2020-11-18 23:32:13,888 INFO 12248 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:32:13,903 INFO 12248 [egg:core] dump config after load, 4ms
+2020-11-18 23:32:13,921 INFO 12248 [egg-watcher:application] watcher start success
+2020-11-18 23:32:13,924 INFO 12248 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:32:13 GMT+0800 (GMT+08:00)
+2020-11-18 23:32:13,930 INFO 12248 [egg:core] dump config after ready, 4ms
+2020-11-18 23:37:53,368 INFO 12370 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:37:53,397 INFO 12370 [egg-multipart] stream mode enable
+2020-11-18 23:37:53,397 INFO 12370 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:37:53,580 INFO 12370 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:37:53,583 INFO 12370 [egg-security] use methodnoallow middleware
+2020-11-18 23:37:53,583 INFO 12370 [egg-security] use noopen middleware
+2020-11-18 23:37:53,584 INFO 12370 [egg-security] use nosniff middleware
+2020-11-18 23:37:53,585 INFO 12370 [egg-security] use xssProtection middleware
+2020-11-18 23:37:53,586 INFO 12370 [egg-security] use xframe middleware
+2020-11-18 23:37:53,587 INFO 12370 [egg-security] use dta middleware
+2020-11-18 23:37:53,587 INFO 12370 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:37:53,609 INFO 12370 [egg:core] dump config after load, 6ms
+2020-11-18 23:37:53,624 INFO 12370 [egg-watcher:application] watcher start success
+2020-11-18 23:37:53,627 INFO 12370 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:37:53 GMT+0800 (GMT+08:00)
+2020-11-18 23:37:53,632 INFO 12370 [egg:core] dump config after ready, 3ms
+2020-11-18 23:47:06,680 INFO 12520 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:47:06,703 INFO 12520 [egg-multipart] stream mode enable
+2020-11-18 23:47:06,704 INFO 12520 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:47:06,785 INFO 12520 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:47:06,787 INFO 12520 [egg-security] use methodnoallow middleware
+2020-11-18 23:47:06,787 INFO 12520 [egg-security] use noopen middleware
+2020-11-18 23:47:06,788 INFO 12520 [egg-security] use nosniff middleware
+2020-11-18 23:47:06,789 INFO 12520 [egg-security] use xssProtection middleware
+2020-11-18 23:47:06,789 INFO 12520 [egg-security] use xframe middleware
+2020-11-18 23:47:06,789 INFO 12520 [egg-security] use dta middleware
+2020-11-18 23:47:06,789 INFO 12520 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:47:06,803 INFO 12520 [egg:core] dump config after load, 5ms
+2020-11-18 23:47:06,820 INFO 12520 [egg-watcher:application] watcher start success
+2020-11-18 23:47:06,821 INFO 12520 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:47:06 GMT+0800 (GMT+08:00)
+2020-11-18 23:47:06,827 INFO 12520 [egg:core] dump config after ready, 4ms
+2020-11-18 23:47:37,365 INFO 12532 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:47:37,388 INFO 12532 [egg-multipart] stream mode enable
+2020-11-18 23:47:37,389 INFO 12532 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:47:37,464 INFO 12532 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:47:37,466 INFO 12532 [egg-security] use methodnoallow middleware
+2020-11-18 23:47:37,466 INFO 12532 [egg-security] use noopen middleware
+2020-11-18 23:47:37,466 INFO 12532 [egg-security] use nosniff middleware
+2020-11-18 23:47:37,467 INFO 12532 [egg-security] use xssProtection middleware
+2020-11-18 23:47:37,467 INFO 12532 [egg-security] use xframe middleware
+2020-11-18 23:47:37,467 INFO 12532 [egg-security] use dta middleware
+2020-11-18 23:47:37,467 INFO 12532 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:47:37,480 INFO 12532 [egg:core] dump config after load, 4ms
+2020-11-18 23:47:37,495 INFO 12532 [egg-watcher:application] watcher start success
+2020-11-18 23:47:37,501 INFO 12532 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:47:37 GMT+0800 (GMT+08:00)
+2020-11-18 23:47:37,507 INFO 12532 [egg:core] dump config after ready, 4ms
+2020-11-18 23:47:46,910 INFO 12544 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:47:46,933 INFO 12544 [egg-multipart] stream mode enable
+2020-11-18 23:47:46,933 INFO 12544 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:47:47,012 INFO 12544 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:47:47,013 INFO 12544 [egg-security] use methodnoallow middleware
+2020-11-18 23:47:47,014 INFO 12544 [egg-security] use noopen middleware
+2020-11-18 23:47:47,014 INFO 12544 [egg-security] use nosniff middleware
+2020-11-18 23:47:47,014 INFO 12544 [egg-security] use xssProtection middleware
+2020-11-18 23:47:47,015 INFO 12544 [egg-security] use xframe middleware
+2020-11-18 23:47:47,015 INFO 12544 [egg-security] use dta middleware
+2020-11-18 23:47:47,015 INFO 12544 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:47:47,029 INFO 12544 [egg:core] dump config after load, 6ms
+2020-11-18 23:47:47,047 INFO 12544 [egg-watcher:application] watcher start success
+2020-11-18 23:47:47,048 INFO 12544 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:47:47 GMT+0800 (GMT+08:00)
+2020-11-18 23:47:47,054 INFO 12544 [egg:core] dump config after ready, 4ms
+2020-11-18 23:48:15,899 INFO 12570 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:48:15,922 INFO 12570 [egg-multipart] stream mode enable
+2020-11-18 23:48:15,923 INFO 12570 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:48:15,995 INFO 12570 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:48:15,997 INFO 12570 [egg-security] use methodnoallow middleware
+2020-11-18 23:48:15,997 INFO 12570 [egg-security] use noopen middleware
+2020-11-18 23:48:15,998 INFO 12570 [egg-security] use nosniff middleware
+2020-11-18 23:48:15,998 INFO 12570 [egg-security] use xssProtection middleware
+2020-11-18 23:48:15,998 INFO 12570 [egg-security] use xframe middleware
+2020-11-18 23:48:15,998 INFO 12570 [egg-security] use dta middleware
+2020-11-18 23:48:15,998 INFO 12570 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:48:16,012 INFO 12570 [egg:core] dump config after load, 6ms
+2020-11-18 23:48:16,029 INFO 12570 [egg-watcher:application] watcher start success
+2020-11-18 23:48:16,031 INFO 12570 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:48:16 GMT+0800 (GMT+08:00)
+2020-11-18 23:48:16,036 INFO 12570 [egg:core] dump config after ready, 4ms
+2020-11-18 23:50:33,845 INFO 12592 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:50:33,866 INFO 12592 [egg-multipart] stream mode enable
+2020-11-18 23:50:33,867 INFO 12592 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:50:33,947 INFO 12592 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:50:33,948 INFO 12592 [egg-security] use methodnoallow middleware
+2020-11-18 23:50:33,948 INFO 12592 [egg-security] use noopen middleware
+2020-11-18 23:50:33,949 INFO 12592 [egg-security] use nosniff middleware
+2020-11-18 23:50:33,949 INFO 12592 [egg-security] use xssProtection middleware
+2020-11-18 23:50:33,949 INFO 12592 [egg-security] use xframe middleware
+2020-11-18 23:50:33,949 INFO 12592 [egg-security] use dta middleware
+2020-11-18 23:50:33,949 INFO 12592 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:50:33,961 INFO 12592 [egg:core] dump config after load, 4ms
+2020-11-18 23:50:33,976 INFO 12592 [egg-watcher:application] watcher start success
+2020-11-18 23:50:33,981 INFO 12592 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:50:33 GMT+0800 (GMT+08:00)
+2020-11-18 23:50:33,986 INFO 12592 [egg:core] dump config after ready, 4ms
+2020-11-18 23:53:24,590 INFO 12627 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:53:24,615 INFO 12627 [egg-multipart] stream mode enable
+2020-11-18 23:53:24,615 INFO 12627 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:53:24,701 INFO 12627 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:53:24,703 INFO 12627 [egg-security] use methodnoallow middleware
+2020-11-18 23:53:24,703 INFO 12627 [egg-security] use noopen middleware
+2020-11-18 23:53:24,704 INFO 12627 [egg-security] use nosniff middleware
+2020-11-18 23:53:24,704 INFO 12627 [egg-security] use xssProtection middleware
+2020-11-18 23:53:24,704 INFO 12627 [egg-security] use xframe middleware
+2020-11-18 23:53:24,705 INFO 12627 [egg-security] use dta middleware
+2020-11-18 23:53:24,705 INFO 12627 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:53:24,719 INFO 12627 [egg:core] dump config after load, 7ms
+2020-11-18 23:53:24,747 INFO 12627 [egg-watcher:application] watcher start success
+2020-11-18 23:53:24,749 INFO 12627 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:53:24 GMT+0800 (GMT+08:00)
+2020-11-18 23:53:24,759 INFO 12627 [egg:core] dump config after ready, 7ms
+2020-11-18 23:53:41,637 INFO 12636 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:53:41,661 INFO 12636 [egg-multipart] stream mode enable
+2020-11-18 23:53:41,662 INFO 12636 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:53:41,743 INFO 12636 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:53:41,744 INFO 12636 [egg-security] use methodnoallow middleware
+2020-11-18 23:53:41,745 INFO 12636 [egg-security] use noopen middleware
+2020-11-18 23:53:41,745 INFO 12636 [egg-security] use nosniff middleware
+2020-11-18 23:53:41,745 INFO 12636 [egg-security] use xssProtection middleware
+2020-11-18 23:53:41,746 INFO 12636 [egg-security] use xframe middleware
+2020-11-18 23:53:41,746 INFO 12636 [egg-security] use dta middleware
+2020-11-18 23:53:41,746 INFO 12636 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:53:41,758 INFO 12636 [egg:core] dump config after load, 4ms
+2020-11-18 23:53:41,774 INFO 12636 [egg-watcher:application] watcher start success
+2020-11-18 23:53:41,776 INFO 12636 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:53:41 GMT+0800 (GMT+08:00)
+2020-11-18 23:53:41,781 INFO 12636 [egg:core] dump config after ready, 4ms
+2020-11-18 23:54:04,565 INFO 12648 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-18 23:54:04,587 INFO 12648 [egg-multipart] stream mode enable
+2020-11-18 23:54:04,588 INFO 12648 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-18 23:54:04,656 INFO 12648 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-18 23:54:04,657 INFO 12648 [egg-security] use methodnoallow middleware
+2020-11-18 23:54:04,658 INFO 12648 [egg-security] use noopen middleware
+2020-11-18 23:54:04,658 INFO 12648 [egg-security] use nosniff middleware
+2020-11-18 23:54:04,658 INFO 12648 [egg-security] use xssProtection middleware
+2020-11-18 23:54:04,658 INFO 12648 [egg-security] use xframe middleware
+2020-11-18 23:54:04,659 INFO 12648 [egg-security] use dta middleware
+2020-11-18 23:54:04,659 INFO 12648 [egg-security] compose 6 middlewares into one security middleware
+2020-11-18 23:54:04,671 INFO 12648 [egg:core] dump config after load, 3ms
+2020-11-18 23:54:04,687 INFO 12648 [egg-watcher:application] watcher start success
+2020-11-18 23:54:04,690 INFO 12648 [egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 18 2020 23:54:04 GMT+0800 (GMT+08:00)
+2020-11-18 23:54:04,695 INFO 12648 [egg:core] dump config after ready, 4ms
+2020-11-19 00:12:45,626 INFO 12968 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:12:45,651 INFO 12968 [egg-multipart] stream mode enable
+2020-11-19 00:12:45,652 INFO 12968 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:12:45,719 INFO 12968 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:12:45,721 INFO 12968 [egg-security] use methodnoallow middleware
+2020-11-19 00:12:45,721 INFO 12968 [egg-security] use noopen middleware
+2020-11-19 00:12:45,721 INFO 12968 [egg-security] use nosniff middleware
+2020-11-19 00:12:45,722 INFO 12968 [egg-security] use xssProtection middleware
+2020-11-19 00:12:45,722 INFO 12968 [egg-security] use xframe middleware
+2020-11-19 00:12:45,722 INFO 12968 [egg-security] use dta middleware
+2020-11-19 00:12:45,722 INFO 12968 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:12:45,733 INFO 12968 [egg:core] dump config after load, 4ms
+2020-11-19 00:12:45,751 INFO 12968 [egg-watcher:application] watcher start success
+2020-11-19 00:12:45,754 INFO 12968 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:12:45 GMT+0800 (GMT+08:00)
+2020-11-19 00:12:45,760 INFO 12968 [egg:core] dump config after ready, 5ms
+2020-11-19 00:27:14,348 INFO 13357 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:27:14,373 INFO 13357 [egg-multipart] stream mode enable
+2020-11-19 00:27:14,374 INFO 13357 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:27:14,460 INFO 13357 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:27:14,462 INFO 13357 [egg-security] use methodnoallow middleware
+2020-11-19 00:27:14,462 INFO 13357 [egg-security] use noopen middleware
+2020-11-19 00:27:14,462 INFO 13357 [egg-security] use nosniff middleware
+2020-11-19 00:27:14,463 INFO 13357 [egg-security] use xssProtection middleware
+2020-11-19 00:27:14,463 INFO 13357 [egg-security] use xframe middleware
+2020-11-19 00:27:14,463 INFO 13357 [egg-security] use dta middleware
+2020-11-19 00:27:14,463 INFO 13357 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:27:14,475 INFO 13357 [egg:core] dump config after load, 4ms
+2020-11-19 00:27:14,490 INFO 13357 [egg-watcher:application] watcher start success
+2020-11-19 00:27:14,493 INFO 13357 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:27:14 GMT+0800 (GMT+08:00)
+2020-11-19 00:27:14,499 INFO 13357 [egg:core] dump config after ready, 4ms
+2020-11-19 00:27:52,699 INFO 13367 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:27:52,723 INFO 13367 [egg-multipart] stream mode enable
+2020-11-19 00:27:52,723 INFO 13367 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:27:52,796 INFO 13367 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:27:52,798 INFO 13367 [egg-security] use methodnoallow middleware
+2020-11-19 00:27:52,798 INFO 13367 [egg-security] use noopen middleware
+2020-11-19 00:27:52,798 INFO 13367 [egg-security] use nosniff middleware
+2020-11-19 00:27:52,799 INFO 13367 [egg-security] use xssProtection middleware
+2020-11-19 00:27:52,799 INFO 13367 [egg-security] use xframe middleware
+2020-11-19 00:27:52,799 INFO 13367 [egg-security] use dta middleware
+2020-11-19 00:27:52,799 INFO 13367 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:27:52,812 INFO 13367 [egg:core] dump config after load, 5ms
+2020-11-19 00:27:52,828 INFO 13367 [egg-watcher:application] watcher start success
+2020-11-19 00:27:52,830 INFO 13367 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:27:52 GMT+0800 (GMT+08:00)
+2020-11-19 00:27:52,836 INFO 13367 [egg:core] dump config after ready, 4ms
+2020-11-19 00:28:11,439 INFO 13376 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:28:11,465 INFO 13376 [egg-multipart] stream mode enable
+2020-11-19 00:28:11,465 INFO 13376 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:28:11,548 INFO 13376 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:28:11,550 INFO 13376 [egg-security] use methodnoallow middleware
+2020-11-19 00:28:11,550 INFO 13376 [egg-security] use noopen middleware
+2020-11-19 00:28:11,551 INFO 13376 [egg-security] use nosniff middleware
+2020-11-19 00:28:11,552 INFO 13376 [egg-security] use xssProtection middleware
+2020-11-19 00:28:11,552 INFO 13376 [egg-security] use xframe middleware
+2020-11-19 00:28:11,552 INFO 13376 [egg-security] use dta middleware
+2020-11-19 00:28:11,552 INFO 13376 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:28:11,566 INFO 13376 [egg:core] dump config after load, 6ms
+2020-11-19 00:28:11,581 INFO 13376 [egg-watcher:application] watcher start success
+2020-11-19 00:28:11,585 INFO 13376 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:28:11 GMT+0800 (GMT+08:00)
+2020-11-19 00:28:11,591 INFO 13376 [egg:core] dump config after ready, 5ms
+2020-11-19 00:29:36,427 INFO 13391 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:29:36,453 INFO 13391 [egg-multipart] stream mode enable
+2020-11-19 00:29:36,453 INFO 13391 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:29:36,528 INFO 13391 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:29:36,529 INFO 13391 [egg-security] use methodnoallow middleware
+2020-11-19 00:29:36,529 INFO 13391 [egg-security] use noopen middleware
+2020-11-19 00:29:36,532 INFO 13391 [egg-security] use nosniff middleware
+2020-11-19 00:29:36,533 INFO 13391 [egg-security] use xssProtection middleware
+2020-11-19 00:29:36,533 INFO 13391 [egg-security] use xframe middleware
+2020-11-19 00:29:36,533 INFO 13391 [egg-security] use dta middleware
+2020-11-19 00:29:36,533 INFO 13391 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:29:36,545 INFO 13391 [egg:core] dump config after load, 4ms
+2020-11-19 00:29:36,561 INFO 13391 [egg-watcher:application] watcher start success
+2020-11-19 00:29:36,564 INFO 13391 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:29:36 GMT+0800 (GMT+08:00)
+2020-11-19 00:29:36,569 INFO 13391 [egg:core] dump config after ready, 4ms
+2020-11-19 00:34:25,247 INFO 13467 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:34:25,271 INFO 13467 [egg-multipart] stream mode enable
+2020-11-19 00:34:25,271 INFO 13467 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:34:25,344 INFO 13467 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:34:25,345 INFO 13467 [egg-security] use methodnoallow middleware
+2020-11-19 00:34:25,345 INFO 13467 [egg-security] use noopen middleware
+2020-11-19 00:34:25,346 INFO 13467 [egg-security] use nosniff middleware
+2020-11-19 00:34:25,346 INFO 13467 [egg-security] use xssProtection middleware
+2020-11-19 00:34:25,347 INFO 13467 [egg-security] use xframe middleware
+2020-11-19 00:34:25,347 INFO 13467 [egg-security] use dta middleware
+2020-11-19 00:34:25,347 INFO 13467 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:34:25,363 INFO 13467 [egg:core] dump config after load, 6ms
+2020-11-19 00:34:25,377 INFO 13467 [egg-watcher:application] watcher start success
+2020-11-19 00:34:25,380 INFO 13467 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:34:25 GMT+0800 (GMT+08:00)
+2020-11-19 00:34:25,385 INFO 13467 [egg:core] dump config after ready, 4ms
+2020-11-19 00:34:27,611 INFO 13476 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:34:27,635 INFO 13476 [egg-multipart] stream mode enable
+2020-11-19 00:34:27,635 INFO 13476 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:34:27,710 INFO 13476 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:34:27,714 INFO 13476 [egg-security] use methodnoallow middleware
+2020-11-19 00:34:27,714 INFO 13476 [egg-security] use noopen middleware
+2020-11-19 00:34:27,714 INFO 13476 [egg-security] use nosniff middleware
+2020-11-19 00:34:27,715 INFO 13476 [egg-security] use xssProtection middleware
+2020-11-19 00:34:27,715 INFO 13476 [egg-security] use xframe middleware
+2020-11-19 00:34:27,715 INFO 13476 [egg-security] use dta middleware
+2020-11-19 00:34:27,715 INFO 13476 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:34:27,731 INFO 13476 [egg:core] dump config after load, 5ms
+2020-11-19 00:34:27,747 INFO 13476 [egg-watcher:application] watcher start success
+2020-11-19 00:34:27,750 INFO 13476 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:34:27 GMT+0800 (GMT+08:00)
+2020-11-19 00:34:27,757 INFO 13476 [egg:core] dump config after ready, 5ms
+2020-11-19 00:38:36,402 INFO 13514 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:38:36,426 INFO 13514 [egg-multipart] stream mode enable
+2020-11-19 00:38:36,427 INFO 13514 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:38:36,502 INFO 13514 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:38:36,504 INFO 13514 [egg-security] use methodnoallow middleware
+2020-11-19 00:38:36,504 INFO 13514 [egg-security] use noopen middleware
+2020-11-19 00:38:36,504 INFO 13514 [egg-security] use nosniff middleware
+2020-11-19 00:38:36,505 INFO 13514 [egg-security] use xssProtection middleware
+2020-11-19 00:38:36,505 INFO 13514 [egg-security] use xframe middleware
+2020-11-19 00:38:36,505 INFO 13514 [egg-security] use dta middleware
+2020-11-19 00:38:36,505 INFO 13514 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:38:36,517 INFO 13514 [egg:core] dump config after load, 4ms
+2020-11-19 00:38:36,532 INFO 13514 [egg-watcher:application] watcher start success
+2020-11-19 00:38:36,537 INFO 13514 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:38:36 GMT+0800 (GMT+08:00)
+2020-11-19 00:38:36,542 INFO 13514 [egg:core] dump config after ready, 4ms
+2020-11-19 00:39:15,502 INFO 13526 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:39:15,526 INFO 13526 [egg-multipart] stream mode enable
+2020-11-19 00:39:15,527 INFO 13526 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:39:15,604 INFO 13526 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:39:15,606 INFO 13526 [egg-security] use methodnoallow middleware
+2020-11-19 00:39:15,607 INFO 13526 [egg-security] use noopen middleware
+2020-11-19 00:39:15,607 INFO 13526 [egg-security] use nosniff middleware
+2020-11-19 00:39:15,607 INFO 13526 [egg-security] use xssProtection middleware
+2020-11-19 00:39:15,608 INFO 13526 [egg-security] use xframe middleware
+2020-11-19 00:39:15,608 INFO 13526 [egg-security] use dta middleware
+2020-11-19 00:39:15,608 INFO 13526 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:39:15,620 INFO 13526 [egg:core] dump config after load, 4ms
+2020-11-19 00:39:15,635 INFO 13526 [egg-watcher:application] watcher start success
+2020-11-19 00:39:15,638 INFO 13526 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:39:15 GMT+0800 (GMT+08:00)
+2020-11-19 00:39:15,644 INFO 13526 [egg:core] dump config after ready, 4ms
+2020-11-19 00:39:34,641 INFO 13535 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:39:34,666 INFO 13535 [egg-multipart] stream mode enable
+2020-11-19 00:39:34,666 INFO 13535 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:39:34,743 INFO 13535 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:39:34,745 INFO 13535 [egg-security] use methodnoallow middleware
+2020-11-19 00:39:34,745 INFO 13535 [egg-security] use noopen middleware
+2020-11-19 00:39:34,745 INFO 13535 [egg-security] use nosniff middleware
+2020-11-19 00:39:34,746 INFO 13535 [egg-security] use xssProtection middleware
+2020-11-19 00:39:34,746 INFO 13535 [egg-security] use xframe middleware
+2020-11-19 00:39:34,746 INFO 13535 [egg-security] use dta middleware
+2020-11-19 00:39:34,746 INFO 13535 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:39:34,760 INFO 13535 [egg:core] dump config after load, 6ms
+2020-11-19 00:39:34,777 INFO 13535 [egg-watcher:application] watcher start success
+2020-11-19 00:39:34,779 INFO 13535 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:39:34 GMT+0800 (GMT+08:00)
+2020-11-19 00:39:34,785 INFO 13535 [egg:core] dump config after ready, 5ms
+2020-11-19 00:40:10,934 INFO 13567 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:40:10,954 INFO 13567 [egg-multipart] stream mode enable
+2020-11-19 00:40:10,955 INFO 13567 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:40:11,036 INFO 13567 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:40:11,037 INFO 13567 [egg-security] use methodnoallow middleware
+2020-11-19 00:40:11,038 INFO 13567 [egg-security] use noopen middleware
+2020-11-19 00:40:11,038 INFO 13567 [egg-security] use nosniff middleware
+2020-11-19 00:40:11,038 INFO 13567 [egg-security] use xssProtection middleware
+2020-11-19 00:40:11,039 INFO 13567 [egg-security] use xframe middleware
+2020-11-19 00:40:11,039 INFO 13567 [egg-security] use dta middleware
+2020-11-19 00:40:11,039 INFO 13567 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:40:11,052 INFO 13567 [egg:core] dump config after load, 6ms
+2020-11-19 00:40:11,067 INFO 13567 [egg-watcher:application] watcher start success
+2020-11-19 00:40:11,070 INFO 13567 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:40:11 GMT+0800 (GMT+08:00)
+2020-11-19 00:40:11,076 INFO 13567 [egg:core] dump config after ready, 5ms
+2020-11-19 00:40:27,874 INFO 13579 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:40:27,898 INFO 13579 [egg-multipart] stream mode enable
+2020-11-19 00:40:27,898 INFO 13579 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:40:27,971 INFO 13579 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:40:27,972 INFO 13579 [egg-security] use methodnoallow middleware
+2020-11-19 00:40:27,972 INFO 13579 [egg-security] use noopen middleware
+2020-11-19 00:40:27,973 INFO 13579 [egg-security] use nosniff middleware
+2020-11-19 00:40:27,973 INFO 13579 [egg-security] use xssProtection middleware
+2020-11-19 00:40:27,974 INFO 13579 [egg-security] use xframe middleware
+2020-11-19 00:40:27,974 INFO 13579 [egg-security] use dta middleware
+2020-11-19 00:40:27,974 INFO 13579 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:40:27,985 INFO 13579 [egg:core] dump config after load, 4ms
+2020-11-19 00:40:28,002 INFO 13579 [egg-watcher:application] watcher start success
+2020-11-19 00:40:28,005 INFO 13579 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:40:28 GMT+0800 (GMT+08:00)
+2020-11-19 00:40:28,010 INFO 13579 [egg:core] dump config after ready, 4ms
+2020-11-19 00:41:01,694 INFO 13602 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:41:01,715 INFO 13602 [egg-multipart] stream mode enable
+2020-11-19 00:41:01,715 INFO 13602 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:41:01,792 INFO 13602 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:41:01,794 INFO 13602 [egg-security] use methodnoallow middleware
+2020-11-19 00:41:01,794 INFO 13602 [egg-security] use noopen middleware
+2020-11-19 00:41:01,794 INFO 13602 [egg-security] use nosniff middleware
+2020-11-19 00:41:01,795 INFO 13602 [egg-security] use xssProtection middleware
+2020-11-19 00:41:01,795 INFO 13602 [egg-security] use xframe middleware
+2020-11-19 00:41:01,795 INFO 13602 [egg-security] use dta middleware
+2020-11-19 00:41:01,795 INFO 13602 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:41:01,807 INFO 13602 [egg:core] dump config after load, 5ms
+2020-11-19 00:41:01,821 INFO 13602 [egg-watcher:application] watcher start success
+2020-11-19 00:41:01,824 INFO 13602 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:41:01 GMT+0800 (GMT+08:00)
+2020-11-19 00:41:01,829 INFO 13602 [egg:core] dump config after ready, 4ms
+2020-11-19 00:42:12,713 INFO 13631 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:42:12,734 INFO 13631 [egg-multipart] stream mode enable
+2020-11-19 00:42:12,735 INFO 13631 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:42:12,802 INFO 13631 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:42:12,803 INFO 13631 [egg-security] use methodnoallow middleware
+2020-11-19 00:42:12,803 INFO 13631 [egg-security] use noopen middleware
+2020-11-19 00:42:12,804 INFO 13631 [egg-security] use nosniff middleware
+2020-11-19 00:42:12,804 INFO 13631 [egg-security] use xssProtection middleware
+2020-11-19 00:42:12,804 INFO 13631 [egg-security] use xframe middleware
+2020-11-19 00:42:12,805 INFO 13631 [egg-security] use dta middleware
+2020-11-19 00:42:12,805 INFO 13631 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:42:12,817 INFO 13631 [egg:core] dump config after load, 6ms
+2020-11-19 00:42:12,833 INFO 13631 [egg-watcher:application] watcher start success
+2020-11-19 00:42:12,835 INFO 13631 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:42:12 GMT+0800 (GMT+08:00)
+2020-11-19 00:42:12,841 INFO 13631 [egg:core] dump config after ready, 4ms
+2020-11-19 00:42:45,483 INFO 13643 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:42:45,504 INFO 13643 [egg-multipart] stream mode enable
+2020-11-19 00:42:45,504 INFO 13643 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:42:45,571 INFO 13643 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:42:45,572 INFO 13643 [egg-security] use methodnoallow middleware
+2020-11-19 00:42:45,573 INFO 13643 [egg-security] use noopen middleware
+2020-11-19 00:42:45,573 INFO 13643 [egg-security] use nosniff middleware
+2020-11-19 00:42:45,573 INFO 13643 [egg-security] use xssProtection middleware
+2020-11-19 00:42:45,573 INFO 13643 [egg-security] use xframe middleware
+2020-11-19 00:42:45,574 INFO 13643 [egg-security] use dta middleware
+2020-11-19 00:42:45,574 INFO 13643 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:42:45,584 INFO 13643 [egg:core] dump config after load, 3ms
+2020-11-19 00:42:45,599 INFO 13643 [egg-watcher:application] watcher start success
+2020-11-19 00:42:45,604 INFO 13643 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:42:45 GMT+0800 (GMT+08:00)
+2020-11-19 00:42:45,610 INFO 13643 [egg:core] dump config after ready, 4ms
+2020-11-19 00:43:14,224 INFO 13652 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:43:14,248 INFO 13652 [egg-multipart] stream mode enable
+2020-11-19 00:43:14,249 INFO 13652 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:43:14,328 INFO 13652 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:43:14,330 INFO 13652 [egg-security] use methodnoallow middleware
+2020-11-19 00:43:14,330 INFO 13652 [egg-security] use noopen middleware
+2020-11-19 00:43:14,330 INFO 13652 [egg-security] use nosniff middleware
+2020-11-19 00:43:14,331 INFO 13652 [egg-security] use xssProtection middleware
+2020-11-19 00:43:14,331 INFO 13652 [egg-security] use xframe middleware
+2020-11-19 00:43:14,331 INFO 13652 [egg-security] use dta middleware
+2020-11-19 00:43:14,331 INFO 13652 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:43:14,344 INFO 13652 [egg:core] dump config after load, 5ms
+2020-11-19 00:43:14,360 INFO 13652 [egg-watcher:application] watcher start success
+2020-11-19 00:43:14,362 INFO 13652 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:43:14 GMT+0800 (GMT+08:00)
+2020-11-19 00:43:14,367 INFO 13652 [egg:core] dump config after ready, 4ms
+2020-11-19 00:43:27,939 INFO 13664 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:43:27,962 INFO 13664 [egg-multipart] stream mode enable
+2020-11-19 00:43:27,963 INFO 13664 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:43:28,038 INFO 13664 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:43:28,039 INFO 13664 [egg-security] use methodnoallow middleware
+2020-11-19 00:43:28,040 INFO 13664 [egg-security] use noopen middleware
+2020-11-19 00:43:28,040 INFO 13664 [egg-security] use nosniff middleware
+2020-11-19 00:43:28,040 INFO 13664 [egg-security] use xssProtection middleware
+2020-11-19 00:43:28,041 INFO 13664 [egg-security] use xframe middleware
+2020-11-19 00:43:28,041 INFO 13664 [egg-security] use dta middleware
+2020-11-19 00:43:28,041 INFO 13664 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:43:28,056 INFO 13664 [egg:core] dump config after load, 3ms
+2020-11-19 00:43:28,071 INFO 13664 [egg-watcher:application] watcher start success
+2020-11-19 00:43:28,074 INFO 13664 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:43:28 GMT+0800 (GMT+08:00)
+2020-11-19 00:43:28,080 INFO 13664 [egg:core] dump config after ready, 4ms
+2020-11-19 00:43:34,295 INFO 13684 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:43:34,319 INFO 13684 [egg-multipart] stream mode enable
+2020-11-19 00:43:34,320 INFO 13684 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:43:34,394 INFO 13684 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:43:34,396 INFO 13684 [egg-security] use methodnoallow middleware
+2020-11-19 00:43:34,396 INFO 13684 [egg-security] use noopen middleware
+2020-11-19 00:43:34,397 INFO 13684 [egg-security] use nosniff middleware
+2020-11-19 00:43:34,397 INFO 13684 [egg-security] use xssProtection middleware
+2020-11-19 00:43:34,398 INFO 13684 [egg-security] use xframe middleware
+2020-11-19 00:43:34,398 INFO 13684 [egg-security] use dta middleware
+2020-11-19 00:43:34,398 INFO 13684 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:43:34,409 INFO 13684 [egg:core] dump config after load, 4ms
+2020-11-19 00:43:34,427 INFO 13684 [egg-watcher:application] watcher start success
+2020-11-19 00:43:34,429 INFO 13684 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:43:34 GMT+0800 (GMT+08:00)
+2020-11-19 00:43:34,434 INFO 13684 [egg:core] dump config after ready, 4ms
+2020-11-19 00:43:55,704 INFO 13698 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:43:55,728 INFO 13698 [egg-multipart] stream mode enable
+2020-11-19 00:43:55,729 INFO 13698 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:43:55,806 INFO 13698 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:43:55,808 INFO 13698 [egg-security] use methodnoallow middleware
+2020-11-19 00:43:55,808 INFO 13698 [egg-security] use noopen middleware
+2020-11-19 00:43:55,808 INFO 13698 [egg-security] use nosniff middleware
+2020-11-19 00:43:55,809 INFO 13698 [egg-security] use xssProtection middleware
+2020-11-19 00:43:55,809 INFO 13698 [egg-security] use xframe middleware
+2020-11-19 00:43:55,809 INFO 13698 [egg-security] use dta middleware
+2020-11-19 00:43:55,809 INFO 13698 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:43:55,821 INFO 13698 [egg:core] dump config after load, 4ms
+2020-11-19 00:43:55,840 INFO 13698 [egg-watcher:application] watcher start success
+2020-11-19 00:43:55,845 INFO 13698 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:43:55 GMT+0800 (GMT+08:00)
+2020-11-19 00:43:55,856 INFO 13698 [egg:core] dump config after ready, 9ms
+2020-11-19 00:44:14,025 INFO 13715 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:44:14,046 INFO 13715 [egg-multipart] stream mode enable
+2020-11-19 00:44:14,046 INFO 13715 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:44:14,122 INFO 13715 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:44:14,123 INFO 13715 [egg-security] use methodnoallow middleware
+2020-11-19 00:44:14,124 INFO 13715 [egg-security] use noopen middleware
+2020-11-19 00:44:14,125 INFO 13715 [egg-security] use nosniff middleware
+2020-11-19 00:44:14,125 INFO 13715 [egg-security] use xssProtection middleware
+2020-11-19 00:44:14,125 INFO 13715 [egg-security] use xframe middleware
+2020-11-19 00:44:14,126 INFO 13715 [egg-security] use dta middleware
+2020-11-19 00:44:14,126 INFO 13715 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:44:14,138 INFO 13715 [egg:core] dump config after load, 4ms
+2020-11-19 00:44:14,153 INFO 13715 [egg-watcher:application] watcher start success
+2020-11-19 00:44:14,156 INFO 13715 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:44:14 GMT+0800 (GMT+08:00)
+2020-11-19 00:44:14,164 INFO 13715 [egg:core] dump config after ready, 6ms
+2020-11-19 00:44:40,270 INFO 13724 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:44:40,293 INFO 13724 [egg-multipart] stream mode enable
+2020-11-19 00:44:40,293 INFO 13724 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:44:40,383 INFO 13724 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:44:40,386 INFO 13724 [egg-security] use methodnoallow middleware
+2020-11-19 00:44:40,386 INFO 13724 [egg-security] use noopen middleware
+2020-11-19 00:44:40,386 INFO 13724 [egg-security] use nosniff middleware
+2020-11-19 00:44:40,387 INFO 13724 [egg-security] use xssProtection middleware
+2020-11-19 00:44:40,387 INFO 13724 [egg-security] use xframe middleware
+2020-11-19 00:44:40,387 INFO 13724 [egg-security] use dta middleware
+2020-11-19 00:44:40,387 INFO 13724 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:44:40,402 INFO 13724 [egg:core] dump config after load, 6ms
+2020-11-19 00:44:40,420 INFO 13724 [egg-watcher:application] watcher start success
+2020-11-19 00:44:40,421 INFO 13724 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:44:40 GMT+0800 (GMT+08:00)
+2020-11-19 00:44:40,427 INFO 13724 [egg:core] dump config after ready, 4ms
+2020-11-19 00:45:03,618 INFO 13749 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:45:03,638 INFO 13749 [egg-multipart] stream mode enable
+2020-11-19 00:45:03,639 INFO 13749 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:45:03,711 INFO 13749 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:45:03,712 INFO 13749 [egg-security] use methodnoallow middleware
+2020-11-19 00:45:03,713 INFO 13749 [egg-security] use noopen middleware
+2020-11-19 00:45:03,713 INFO 13749 [egg-security] use nosniff middleware
+2020-11-19 00:45:03,713 INFO 13749 [egg-security] use xssProtection middleware
+2020-11-19 00:45:03,714 INFO 13749 [egg-security] use xframe middleware
+2020-11-19 00:45:03,714 INFO 13749 [egg-security] use dta middleware
+2020-11-19 00:45:03,714 INFO 13749 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:45:03,730 INFO 13749 [egg:core] dump config after load, 6ms
+2020-11-19 00:45:03,746 INFO 13749 [egg-watcher:application] watcher start success
+2020-11-19 00:45:03,748 INFO 13749 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:45:03 GMT+0800 (GMT+08:00)
+2020-11-19 00:45:03,754 INFO 13749 [egg:core] dump config after ready, 4ms
+2020-11-19 00:46:33,672 INFO 13767 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:46:33,695 INFO 13767 [egg-multipart] stream mode enable
+2020-11-19 00:46:33,696 INFO 13767 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:46:33,770 INFO 13767 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:46:33,771 INFO 13767 [egg-security] use methodnoallow middleware
+2020-11-19 00:46:33,772 INFO 13767 [egg-security] use noopen middleware
+2020-11-19 00:46:33,772 INFO 13767 [egg-security] use nosniff middleware
+2020-11-19 00:46:33,772 INFO 13767 [egg-security] use xssProtection middleware
+2020-11-19 00:46:33,772 INFO 13767 [egg-security] use xframe middleware
+2020-11-19 00:46:33,773 INFO 13767 [egg-security] use dta middleware
+2020-11-19 00:46:33,773 INFO 13767 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:46:33,787 INFO 13767 [egg:core] dump config after load, 7ms
+2020-11-19 00:46:33,803 INFO 13767 [egg-watcher:application] watcher start success
+2020-11-19 00:46:33,806 INFO 13767 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:46:33 GMT+0800 (GMT+08:00)
+2020-11-19 00:46:33,812 INFO 13767 [egg:core] dump config after ready, 5ms
+2020-11-19 00:57:20,830 INFO 13883 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:57:20,852 INFO 13883 [egg-multipart] stream mode enable
+2020-11-19 00:57:20,852 INFO 13883 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:57:20,931 INFO 13883 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:57:20,933 INFO 13883 [egg-security] use methodnoallow middleware
+2020-11-19 00:57:20,933 INFO 13883 [egg-security] use noopen middleware
+2020-11-19 00:57:20,933 INFO 13883 [egg-security] use nosniff middleware
+2020-11-19 00:57:20,934 INFO 13883 [egg-security] use xssProtection middleware
+2020-11-19 00:57:20,934 INFO 13883 [egg-security] use xframe middleware
+2020-11-19 00:57:20,934 INFO 13883 [egg-security] use dta middleware
+2020-11-19 00:57:20,934 INFO 13883 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:57:20,947 INFO 13883 [egg:core] dump config after load, 4ms
+2020-11-19 00:57:20,964 INFO 13883 [egg-watcher:application] watcher start success
+2020-11-19 00:57:20,967 INFO 13883 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:57:20 GMT+0800 (GMT+08:00)
+2020-11-19 00:57:20,973 INFO 13883 [egg:core] dump config after ready, 5ms
+2020-11-19 00:57:57,567 INFO 13892 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:57:57,590 INFO 13892 [egg-multipart] stream mode enable
+2020-11-19 00:57:57,590 INFO 13892 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:57:57,670 INFO 13892 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:57:57,671 INFO 13892 [egg-security] use methodnoallow middleware
+2020-11-19 00:57:57,672 INFO 13892 [egg-security] use noopen middleware
+2020-11-19 00:57:57,672 INFO 13892 [egg-security] use nosniff middleware
+2020-11-19 00:57:57,672 INFO 13892 [egg-security] use xssProtection middleware
+2020-11-19 00:57:57,672 INFO 13892 [egg-security] use xframe middleware
+2020-11-19 00:57:57,673 INFO 13892 [egg-security] use dta middleware
+2020-11-19 00:57:57,673 INFO 13892 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:57:57,689 INFO 13892 [egg:core] dump config after load, 5ms
+2020-11-19 00:57:57,707 INFO 13892 [egg-watcher:application] watcher start success
+2020-11-19 00:57:57,708 INFO 13892 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:57:57 GMT+0800 (GMT+08:00)
+2020-11-19 00:57:57,714 INFO 13892 [egg:core] dump config after ready, 4ms
+2020-11-19 00:58:35,992 INFO 14157 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:58:36,015 INFO 14157 [egg-multipart] stream mode enable
+2020-11-19 00:58:36,015 INFO 14157 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:58:36,089 INFO 14157 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:58:36,091 INFO 14157 [egg-security] use methodnoallow middleware
+2020-11-19 00:58:36,091 INFO 14157 [egg-security] use noopen middleware
+2020-11-19 00:58:36,092 INFO 14157 [egg-security] use nosniff middleware
+2020-11-19 00:58:36,092 INFO 14157 [egg-security] use xssProtection middleware
+2020-11-19 00:58:36,092 INFO 14157 [egg-security] use xframe middleware
+2020-11-19 00:58:36,093 INFO 14157 [egg-security] use dta middleware
+2020-11-19 00:58:36,093 INFO 14157 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:58:36,106 INFO 14157 [egg:core] dump config after load, 4ms
+2020-11-19 00:58:36,122 INFO 14157 [egg-watcher:application] watcher start success
+2020-11-19 00:58:36,125 INFO 14157 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:58:36 GMT+0800 (GMT+08:00)
+2020-11-19 00:58:36,131 INFO 14157 [egg:core] dump config after ready, 4ms
+2020-11-19 00:58:46,615 INFO 14166 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 00:58:46,637 INFO 14166 [egg-multipart] stream mode enable
+2020-11-19 00:58:46,638 INFO 14166 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 00:58:46,715 INFO 14166 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 00:58:46,717 INFO 14166 [egg-security] use methodnoallow middleware
+2020-11-19 00:58:46,717 INFO 14166 [egg-security] use noopen middleware
+2020-11-19 00:58:46,718 INFO 14166 [egg-security] use nosniff middleware
+2020-11-19 00:58:46,718 INFO 14166 [egg-security] use xssProtection middleware
+2020-11-19 00:58:46,718 INFO 14166 [egg-security] use xframe middleware
+2020-11-19 00:58:46,718 INFO 14166 [egg-security] use dta middleware
+2020-11-19 00:58:46,718 INFO 14166 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 00:58:46,734 INFO 14166 [egg:core] dump config after load, 6ms
+2020-11-19 00:58:46,753 INFO 14166 [egg-watcher:application] watcher start success
+2020-11-19 00:58:46,755 INFO 14166 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 00:58:46 GMT+0800 (GMT+08:00)
+2020-11-19 00:58:46,761 INFO 14166 [egg:core] dump config after ready, 5ms
+2020-11-19 01:04:52,781 INFO 14310 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 01:04:52,813 INFO 14310 [egg-multipart] stream mode enable
+2020-11-19 01:04:52,813 INFO 14310 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 01:04:52,998 INFO 14310 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 01:04:53,000 INFO 14310 [egg-security] use methodnoallow middleware
+2020-11-19 01:04:53,001 INFO 14310 [egg-security] use noopen middleware
+2020-11-19 01:04:53,002 INFO 14310 [egg-security] use nosniff middleware
+2020-11-19 01:04:53,003 INFO 14310 [egg-security] use xssProtection middleware
+2020-11-19 01:04:53,003 INFO 14310 [egg-security] use xframe middleware
+2020-11-19 01:04:53,004 INFO 14310 [egg-security] use dta middleware
+2020-11-19 01:04:53,004 INFO 14310 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 01:04:53,022 INFO 14310 [egg:core] dump config after load, 5ms
+2020-11-19 01:04:53,038 INFO 14310 [egg-watcher:application] watcher start success
+2020-11-19 01:04:53,041 INFO 14310 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 01:04:53 GMT+0800 (GMT+08:00)
+2020-11-19 01:04:53,047 INFO 14310 [egg:core] dump config after ready, 4ms
+2020-11-19 01:05:17,750 INFO 14330 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 01:05:17,771 INFO 14330 [egg-multipart] stream mode enable
+2020-11-19 01:05:17,771 INFO 14330 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 01:05:17,839 INFO 14330 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 01:05:17,841 INFO 14330 [egg-security] use methodnoallow middleware
+2020-11-19 01:05:17,841 INFO 14330 [egg-security] use noopen middleware
+2020-11-19 01:05:17,842 INFO 14330 [egg-security] use nosniff middleware
+2020-11-19 01:05:17,842 INFO 14330 [egg-security] use xssProtection middleware
+2020-11-19 01:05:17,842 INFO 14330 [egg-security] use xframe middleware
+2020-11-19 01:05:17,842 INFO 14330 [egg-security] use dta middleware
+2020-11-19 01:05:17,842 INFO 14330 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 01:05:17,853 INFO 14330 [egg:core] dump config after load, 4ms
+2020-11-19 01:05:17,868 INFO 14330 [egg-watcher:application] watcher start success
+2020-11-19 01:05:17,871 INFO 14330 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 01:05:17 GMT+0800 (GMT+08:00)
+2020-11-19 01:05:17,876 INFO 14330 [egg:core] dump config after ready, 4ms
+2020-11-19 01:06:53,605 INFO 14368 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-19 01:06:53,630 INFO 14368 [egg-multipart] stream mode enable
+2020-11-19 01:06:53,630 INFO 14368 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-19 01:06:53,705 INFO 14368 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-19 01:06:53,707 INFO 14368 [egg-security] use methodnoallow middleware
+2020-11-19 01:06:53,707 INFO 14368 [egg-security] use noopen middleware
+2020-11-19 01:06:53,708 INFO 14368 [egg-security] use nosniff middleware
+2020-11-19 01:06:53,708 INFO 14368 [egg-security] use xssProtection middleware
+2020-11-19 01:06:53,708 INFO 14368 [egg-security] use xframe middleware
+2020-11-19 01:06:53,709 INFO 14368 [egg-security] use dta middleware
+2020-11-19 01:06:53,709 INFO 14368 [egg-security] compose 6 middlewares into one security middleware
+2020-11-19 01:06:53,726 INFO 14368 [egg:core] dump config after load, 8ms
+2020-11-19 01:06:53,742 INFO 14368 [egg-watcher:application] watcher start success
+2020-11-19 01:06:53,744 INFO 14368 [egg-mysql] instance[0] status OK, rds currentTime: Thu Nov 19 2020 01:06:53 GMT+0800 (GMT+08:00)
+2020-11-19 01:06:53,749 INFO 14368 [egg:core] dump config after ready, 4ms

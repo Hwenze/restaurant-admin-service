@@ -20,27 +20,29 @@ const cb = (option) => {
 /**
  * {
  *   id:1
- *   parentId:0,
+ *   parent_id:0,
  *   children:[
  *     {
 *        id:1
-*        parentId:0,
+*        parent_id:0,
 *        children:[]
  *     }
  *   ]
  * }
  */
-const TREE = (arr, parentId = 0) => {
+const TREE = (arr, parent_id = 0) => {
     let temp = [];  // 输出模板
     let treeArr = arr;
     treeArr.forEach((item, index) => {
-        item.parentId *= 1;
-        if (item.parentId == parentId) {
+        item.parent_id *= 1;
+        if (item.parent_id == parent_id) {
             if (TREE(treeArr, treeArr[index].id).length > 0) {
                 // 递归调用此函数
                 treeArr[index].children = TREE(treeArr, treeArr[index].id);
             }
-            temp.push({ ...treeArr[index] });
+            temp.push({ ...treeArr[index], 
+                key: treeArr[index].id,
+                title: treeArr[index].router_name });
         }
     });
     return temp;
@@ -51,8 +53,8 @@ const CATEGORYTREE = (arr, pid = 0) => {
     let treeArr = arr;
     treeArr.forEach((item, index) => {
         item.isHide = item.isHide * 1 == 1 ? true : false;
-        item.parentId *= 1;
-        if (item.parentId == pid) {
+        item.parent_id *= 1;
+        if (item.parent_id == pid) {
             if (CATEGORYTREE(treeArr, treeArr[index].id).length > 0) {
                 // 递归调用此函数
                 if (item) {

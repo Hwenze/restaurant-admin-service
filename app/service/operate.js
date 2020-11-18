@@ -27,12 +27,12 @@ class OperateService extends Service {
   }
 
   // 根据店铺身份返回店铺下面的所有权限列表
-  async queryRoleListByAdminId() {
+  async queryRoleListByAdminId(query) {
     const { ctx, app } = this;
     const { admin_id = '' } = await ctx.service.common.getUserInfo();
     return await app.mysql.select('admin_role', {
       columns: ['id', 'name', 'create_time', 'status'],
-      where: { admin_id }, // WHERE 条件
+      where: { admin_id, ...query }, // WHERE 条件
       orders: [['id', 'desc']], // 排序方式
     });
   }
@@ -47,6 +47,25 @@ class OperateService extends Service {
   async deleteRoleById(id) {
     const { app } = this;
     return await app.mysql.delete('admin_role', { id });
+  }
+
+  async changeRoleStatus(id, status) {
+    const { app } = this;
+    return await app.mysql.update('admin_role', {
+      status: status
+    }, {
+      where: { id }
+    })
+  }
+
+  // 根据router_ids查询菜单
+  async queryMenuByRouteIds(ids) {
+    const { app } = this;
+    return await app.mysql.select('admin_router', { // 搜索 post 表
+      where: { status: 1, id: ids }, // WHERE 条件
+      orders: [['id', 'desc']], // 排序方式
+    });
+
   }
 
 }
