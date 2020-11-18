@@ -40,7 +40,10 @@ class HomeController extends Controller {
           let userinfo = {
             username: result.username,
             avatar: result.avatar,
-            nickname: result.nickname
+            nickname: result.nickname,
+            role:result.role_id,
+            user_id:result.id,
+            admin_id:result.admin_id
           }
           // 生成token
           const token = app.jwt.sign(userinfo, app.config.jwt.secret, { expiresIn: '7 days' }); // 2分钟token过期

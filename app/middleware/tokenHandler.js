@@ -10,6 +10,7 @@ module.exports = (options, app) => {
         if (token) {
             try {
                 ctx.app.jwt.verify(token, options.secret); // 验证token 
+
                 await next();
             } catch (error) {
                 ctx.body = cb({ code: 401, msg: RETURN_CODE['401'] });

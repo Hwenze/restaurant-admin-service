@@ -1,5 +1,6 @@
 // app/service/User.js
 const Service = require('egg').Service;
+
 class UserService extends Service {
 
   // 查询用户信息
@@ -38,29 +39,7 @@ class UserService extends Service {
     return await app.mysql.get('admin_role', { id: roleId })
   }
 
-  // 查询用户列表
-  async queryUserListByAdminId(option) {
-    const { ctx, app } = this;
-    const { userinfo = {} } = ctx.session;
-    const { admin_id = '' } = userinfo;
-    const pageSize = parseInt(option.pageSize || 10);
-    const current = parseInt(option.current || 1);
-    const result = await app.mysql.select('admin_userinfo', { // 搜索 post 表
-      where: { admin_id }, // WHERE 条件
-      orders: [['id', 'desc']], // 排序方式
-      limit: pageSize, // 返回数据量
-      offset: current * pageSize, // 数据偏移量
-    });
-
-    const total = await app.mysql.get('admin_userinfo', { admin_id: admin_id });
-
-    return {
-      list: result,
-      total: total || 0,
-      current,
-      pageSize
-    };
-  }
+  
 }
 
 module.exports = UserService;
