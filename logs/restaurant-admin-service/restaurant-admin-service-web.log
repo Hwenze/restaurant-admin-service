@@ -1,0 +1,31 @@
+2020-11-18 15:54:27,176 ERROR 13784 [-/127.0.0.1/-/1ms GET /user/getAgreement] nodejs.TypeError: ctx.service.operate.queryuserAgreement is not a function
+    at UserController.queryuserAgreement (D:\HongZe-studio\restaurant-admin-service\app\controller\user.js:22:46)
+    at Object.callFn (D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\HongZe-studio\restaurant-admin-service\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\HongZe-studio\restaurant-admin-service\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\HongZe-studio\restaurant-admin-service\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 13784
+hostname: LAPTOP-MG1SDB3P
+
+2020-11-18 18:07:49,859 ERROR 15744 [-/127.0.0.1/-/28ms POST /api/setAgreement] nodejs.TypeError: Cannot destructure property `code` of 'undefined' or 'null'.
+    at cb (D:\HongZe-studio\restaurant-admin-service\app\utils\index.js:5:65)
+    at CommonController.updateuserAgreement (D:\HongZe-studio\restaurant-admin-service\app\controller\common.js:27:24)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15744
+hostname: LAPTOP-MG1SDB3P
+
+2020-11-18 18:09:40,754 ERROR 15744 [-/127.0.0.1/-/14ms POST /api/setAgreement] nodejs.TypeError: Cannot destructure property `code` of 'undefined' or 'null'.
+    at cb (D:\HongZe-studio\restaurant-admin-service\app\utils\index.js:5:65)
+    at CommonController.updateuserAgreement (D:\HongZe-studio\restaurant-admin-service\app\controller\common.js:27:24)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15744
+hostname: LAPTOP-MG1SDB3P
+

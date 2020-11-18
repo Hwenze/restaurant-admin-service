@@ -19,3 +19,96 @@
 2020-11-16 11:48:45,492 INFO 9536 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
 2020-11-16 11:48:45,492 INFO 9536 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
 2020-11-16 11:48:45,492 INFO 9536 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 11:17:35,987 INFO 7088 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 61944016ms at 2020-11-19 04:30:00.003
+2020-11-18 11:17:35,987 INFO 7088 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 45744013ms at 2020-11-19 00:00:00.000
+2020-11-18 11:17:35,987 INFO 7088 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 45745013ms at 2020-11-19 00:00:01.000
+2020-11-18 11:17:35,777 INFO 15964 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 11:17:35,777 INFO 15964 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 11:17:35,777 INFO 15964 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 13:53:52,385 INFO 14444 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 13:53:52,385 INFO 14444 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 13:53:52,385 INFO 14444 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 13:53:53,741 INFO 1960 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 52566261ms at 2020-11-19 04:30:00.002
+2020-11-18 13:53:53,742 INFO 1960 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 36366258ms at 2020-11-19 00:00:00.000
+2020-11-18 13:53:53,742 INFO 1960 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 36367258ms at 2020-11-19 00:00:01.000
+2020-11-18 15:32:56,938 INFO 13784 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:32:56,938 INFO 13784 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:32:56,938 INFO 13784 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:43:22,299 INFO 16116 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:43:22,299 INFO 16116 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:43:22,299 INFO 16116 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:50:24,529 INFO 11740 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:50:24,529 INFO 11740 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:50:24,529 INFO 11740 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:50:33,889 INFO 13108 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:50:33,889 INFO 13108 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:50:33,889 INFO 13108 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:54:19,219 INFO 13784 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:54:19,219 INFO 13784 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:54:19,219 INFO 13784 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:55:08,430 INFO 9792 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:55:08,430 INFO 9792 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:55:08,430 INFO 9792 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:58:19,587 INFO 11692 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:58:19,587 INFO 11692 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:58:19,587 INFO 11692 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:59:27,346 INFO 10556 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:59:27,346 INFO 10556 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:59:27,346 INFO 10556 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 15:59:31,975 INFO 8276 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 15:59:31,975 INFO 8276 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 15:59:31,975 INFO 8276 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 16:03:28,609 INFO 2396 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 16:03:28,609 INFO 2396 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 16:03:28,609 INFO 2396 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 16:07:08,949 INFO 16020 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 16:07:08,949 INFO 16020 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 16:07:08,949 INFO 16020 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 16:07:18,619 INFO 7580 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 16:07:18,619 INFO 7580 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 16:07:18,619 INFO 7580 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 16:07:22,847 INFO 1604 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 16:07:22,847 INFO 1604 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 16:07:22,847 INFO 1604 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 16:08:28,981 INFO 15264 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44491021ms at 2020-11-19 04:30:00.002
+2020-11-18 16:08:28,982 INFO 15264 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 28291018ms at 2020-11-19 00:00:00.000
+2020-11-18 16:08:28,982 INFO 15264 [Timer] D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28292018ms at 2020-11-19 00:00:01.000
+2020-11-18 16:08:28,761 INFO 10108 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 16:08:28,761 INFO 10108 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 16:08:28,761 INFO 10108 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 16:10:54,675 INFO 11940 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 16:10:54,675 INFO 11940 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 16:10:54,675 INFO 11940 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 17:08:53,022 INFO 2336 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 17:08:53,022 INFO 2336 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 17:08:53,022 INFO 2336 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 17:08:54,370 INFO 9624 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 17:08:54,370 INFO 9624 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 17:08:54,370 INFO 9624 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 17:13:53,040 INFO 292 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 17:13:53,040 INFO 292 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 17:13:53,040 INFO 292 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 17:13:54,457 INFO 2964 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 17:13:54,457 INFO 2964 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 17:13:54,457 INFO 2964 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 17:56:31,495 INFO 6408 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 17:56:31,495 INFO 6408 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 17:56:31,495 INFO 6408 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 18:05:43,308 INFO 4148 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 18:05:43,308 INFO 4148 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 18:05:43,308 INFO 4148 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 18:06:40,409 INFO 16652 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 18:06:40,409 INFO 16652 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 18:06:40,409 INFO 16652 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 18:07:00,779 INFO 9656 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 18:07:00,779 INFO 9656 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 18:07:00,779 INFO 9656 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 18:07:44,784 INFO 15744 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 18:07:44,784 INFO 15744 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 18:07:44,784 INFO 15744 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 18:09:53,622 INFO 17244 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 18:09:53,622 INFO 17244 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 18:09:53,622 INFO 17244 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-18 18:09:55,019 INFO 16864 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-18 18:09:55,019 INFO 16864 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-11-18 18:09:55,019 INFO 16864 [egg-schedule]: register schedule D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js

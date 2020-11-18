@@ -1,0 +1,11 @@
+'use strict';
+
+/**
+ * @param {Egg.Application} app - egg application
+ */
+module.exports = app => {
+  const { router, controller, middleware } = app;
+  router.get('/api/getAgreement', controller.common.queryuserAgreement);
+  router.post('/api/setAgreement', controller.common.updateuserAgreement);
+};
+

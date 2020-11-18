@@ -38,7 +38,6 @@ class UserService extends Service {
     const { ctx, app } = this;
     return await app.mysql.get('admin_role', { id: roleId })
   }
-
   
 }
 
