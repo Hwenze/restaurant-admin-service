@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 16/11/2020 10:00:19
+ Date: 18/11/2020 11:01:08
 */
 
 SET NAMES utf8mb4;
@@ -49,7 +49,8 @@ CREATE TABLE `admin_role` (
 -- Records of admin_role
 -- ----------------------------
 BEGIN;
-INSERT INTO `admin_role` VALUES (1, '店主', 1, '2020-11-12 15:14:27', '1,3,4,5,6,7,8,9,10,11,13,14,15', 1);
+INSERT INTO `admin_role` VALUES (1, '店主', 1, '2020-11-12 15:14:27', '1,2,3,4,5,6,7', 1);
+INSERT INTO `admin_role` VALUES (2, '文泽大保健的店小二', 1, '2020-11-17 11:15:50', '1,2,3,4,5,6,7', 1);
 INSERT INTO `admin_role` VALUES (999, '游客', 0, '2020-11-14 13:50:48', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15', 1);
 COMMIT;
 
@@ -73,8 +74,8 @@ CREATE TABLE `admin_router` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `admin_router` VALUES (1, '/operate', '运营板块', NULL, NULL, 1, 0);
-INSERT INTO `admin_router` VALUES (2, '/operate/list', '用户列表', NULL, NULL, 1, 1);
-INSERT INTO `admin_router` VALUES (3, '/operate/detail', '用户详情', NULL, NULL, 1, 1);
+INSERT INTO `admin_router` VALUES (2, '/operate/user', '运营列表', NULL, NULL, 1, 1);
+INSERT INTO `admin_router` VALUES (3, '/operate/detail', '运营详情', NULL, NULL, 1, 1);
 INSERT INTO `admin_router` VALUES (4, '/member', '会员模块', NULL, NULL, 1, 0);
 INSERT INTO `admin_router` VALUES (5, '/member/list', '会员列表', NULL, NULL, 1, 4);
 INSERT INTO `admin_router` VALUES (6, '/member/detail', '会员详情', NULL, NULL, 1, 4);
@@ -103,13 +104,14 @@ CREATE TABLE `admin_userinfo` (
   `admin_id` int DEFAULT NULL COMMENT '店id',
   `status` int DEFAULT '1' COMMENT '1:正常0:冻结',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- ----------------------------
 -- Records of admin_userinfo
 -- ----------------------------
 BEGIN;
 INSERT INTO `admin_userinfo` VALUES (1, 'admin', 'admin', '2020-11-11 15:46:22', 'e10adc3949ba59abbe56e057f20f883e', 1, 1, 1);
+INSERT INTO `admin_userinfo` VALUES (2, 'joker', '文泽大保健店小二', '2020-11-17 11:14:44', 'e10adc3949ba59abbe56e057f20f883e', 2, 1, 1);
 COMMIT;
 
 -- ----------------------------
