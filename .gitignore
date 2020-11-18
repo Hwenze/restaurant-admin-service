@@ -1,3 +1,11 @@
+.idea/
+package-lock.json
+node_modules/
+!app/typings/
+run/
+test/
+typings/
+logs/
 .DS_Store
 .happypack/
 node_modules/
