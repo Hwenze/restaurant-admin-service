@@ -6,6 +6,7 @@ const cb = (option) => {
     let result = {
         ...option,
         code,
+        type: code === 200 ? 'success' : 'error',
         msg: msg || RETURN_CODE[code],
     };
     if (data) {

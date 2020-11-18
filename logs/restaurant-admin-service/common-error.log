@@ -78,3 +78,33 @@ name: "ClusterClientNoResponseError"
 pid: 4383
 hostname: fanhongkaideMacBook-Pro.local
 
+2020-11-18 17:13:30,921 ERROR 4120 nodejs.ClusterClientNoResponseError: client no response in 1457366ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4120
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-18 18:35:02,554 ERROR 4120 nodejs.ClusterClientNoResponseError: client no response in 1837398ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4120
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-18 19:21:17,291 ERROR 4120 nodejs.ClusterClientNoResponseError: client no response in 1974541ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4120
+hostname: fanhongkaideMacBook-Pro.local
+

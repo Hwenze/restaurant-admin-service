@@ -1,6 +1,7 @@
 'use strict';
 
 const Controller = require('egg').Controller;
+const md5 = require('md5');
 const { cb, TREE, filterQuery } = require('../utils/index');
 
 class OperateController extends Controller {
@@ -35,6 +36,52 @@ class OperateController extends Controller {
     } else {
       ctx.body = cb({ code: 500 });
       return;
+    }
+  }
+
+  // 添加员工
+  async insertUserByAminId() {
+    const { ctx } = this;
+    const isPass = {
+      number: ['role'],
+      string: ['username', 'password', 'nickname']
+    }
+    const query = filterQuery(ctx.request.body, isPass);
+    const { username, nickname, password = 123456, role = 999 } = query.column;
+    if (!username) {
+      ctx.body = cb({
+        code: 1000,
+        msg: '参数[username]不能为空',
+      });
+      return;
+    }
+    if (!nickname) {
+      ctx.body = cb({
+        code: 1000,
+        msg: '参数[nickname]不能为空',
+      });
+      return;
+    }
+    const userInfo = await ctx.service.user.queryInfoByUserName(username);
+    if (userInfo) {
+      ctx.body = cb({
+        code: 500,
+        msg: `用户名[${username}]已经存在`,
+      });
+      return;
+    } else {
+      let result = {
+        username: username,
+        nickname: nickname,
+        role: role,
+        password: md5(password),
+      }
+      const insertReuslt = await ctx.service.user.insertUserByAminId(result);
+      if (insertReuslt && insertReuslt.affectedRows === 1) {
+        ctx.body = cb({ msg: '创建成功' });
+      } else {
+        ctx.body = cb({ code: 500, msg: '创建失败' });
+      }
     }
   }
 

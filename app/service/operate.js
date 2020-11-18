@@ -6,7 +6,8 @@ class OperateService extends Service {
   // 根据店铺身份查询该店员工列表
   async queryUserListByAdminId(option) {
     const { ctx, app } = this;
-    const { admin_id = '' } = await ctx.service.common.getUserInfo();
+    const userinfo = await ctx.service.common.getUserInfo();
+    const admin_id = userinfo.admin_id;
     const { page = {}, column = {} } = option;
     const { pageSize = 10, current = 0 } = page;
     const result = await app.mysql.select('admin_userinfo', {
@@ -47,6 +48,7 @@ class OperateService extends Service {
     const { app } = this;
     return await app.mysql.delete('admin_role', { id });
   }
+
 }
 
 
