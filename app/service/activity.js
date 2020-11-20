@@ -42,7 +42,7 @@ class CommonService extends Service {
   // 更改活动资讯
   async updateRealTimeInfo(column) {
     const { app } = this;
-    return await app.mysql.update('user_agreement',{ ...column });
+    return await app.mysql.update('real_time_info', { ...column });
   }
 
   // 删除活动资讯
