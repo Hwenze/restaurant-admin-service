@@ -50,3 +50,74 @@ hostname: fanhongkaideMacBook-Pro.local
 pid: 13579
 hostname: fanhongkaideMacBook-Pro.local
 
+2020-11-19 23:21:50,458 ERROR 4251 [-/127.0.0.1/-/11ms POST /api/uploadImage] nodejs.TypeError: Cannot read property 'uploadDir' of undefined
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:55:32)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4251
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:23:59,155 ERROR 4301 [-/127.0.0.1/-/19ms POST /api/uploadImage] nodejs.TypeError: Cannot read property 'uploadDir' of undefined
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:55:32)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4301
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:48:10,249 ERROR 4425 [-/127.0.0.1/-/12ms POST /api/uploadImage] nodejs.ReferenceError: mkdir is not defined
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:53:5)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4425
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:48:33,051 ERROR 4440 [-/127.0.0.1/-/17ms POST /api/uploadImage] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir 'app/public/image/20201104'
+    at Object.mkdirSync (fs.js:757:3)
+    at mkdir (/Volumes/projects/restaurant-admin-service/app/utils/index.js:115:12)
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:53:11)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -2
+syscall: "mkdir"
+code: "ENOENT"
+path: "app/public/image/20201104"
+name: "ENOENTError"
+pid: 4440
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:50:02,207 ERROR 4487 [-/127.0.0.1/-/15ms POST /api/uploadImage] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir '/app/public/image/20201104'
+    at Object.mkdirSync (fs.js:757:3)
+    at mkdir (/Volumes/projects/restaurant-admin-service/app/utils/index.js:115:12)
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:54:11)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -2
+syscall: "mkdir"
+code: "ENOENT"
+path: "/app/public/image/20201104"
+name: "ENOENTError"
+pid: 4487
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-20 10:06:34,690 ERROR 1608 [-/127.0.0.1/-/11ms POST /api/uploadImage] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir '/app/public/image/20201105'
+    at Object.mkdirSync (fs.js:757:3)
+    at mkdir (/Volumes/projects/restaurant-admin-service/app/utils/index.js:115:12)
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:54:11)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -2
+syscall: "mkdir"
+code: "ENOENT"
+path: "/app/public/image/20201105"
+name: "ENOENTError"
+pid: 1608
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-20 10:38:31,373 ERROR 2151 [-/127.0.0.1/-/15ms POST /api/uploadImage] nodejs.ReferenceError: app is not defined
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:60:24)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 2151
+hostname: fanhongkaideMacBook-Pro.local
+

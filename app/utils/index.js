@@ -1,4 +1,6 @@
 const { RETURN_CODE } = require('./enum');
+const fs = require('fs');
+const { dirname } = require('path');
 
 // 接口统一回调
 const cb = (option) => {
@@ -40,9 +42,11 @@ const TREE = (arr, parent_id = 0) => {
                 // 递归调用此函数
                 treeArr[index].children = TREE(treeArr, treeArr[index].id);
             }
-            temp.push({ ...treeArr[index], 
+            temp.push({
+                ...treeArr[index],
                 key: treeArr[index].id,
-                title: treeArr[index].router_name });
+                title: treeArr[index].router_name
+            });
         }
     });
     return temp;
@@ -78,9 +82,9 @@ const Price = (num) => {
 const filterQuery = (target, params) => {
     let query = {
         page: {},
-        column: {}
+        column: {},
     };
-    let { number = [], string = [] } = params;
+    let { number = [], string = [], array = [] } = params;
     if (!number || !Array.isArray(number)) {
         number = [];
     }
@@ -94,7 +98,7 @@ const filterQuery = (target, params) => {
                 query.column[key] = Number(target[key]);
             }
             if (page.indexOf(key) !== -1) {
-                query.page[key] = key === 'current' ? Number(target[key]) - 1 : Number(target[key]);
+                query.page[key] = key === 'current' ? Number(target[key]) === 0 ? 0 : Number(target[key]) - 1 : Number(target[key]);
             }
             if (string.indexOf(key) !== -1 && !query.hasOwnProperty(key)) {
                 query.column[key] = target[key];
@@ -102,6 +106,14 @@ const filterQuery = (target, params) => {
         }
     }
     return query;
+
+    
+
+}
+const mkdir = (dirName)=>{
+    if(!fs.existsSync(dirName)){
+        fs.mkdirSync(dirName)
+    }
 }
 
 
@@ -111,6 +123,7 @@ module.exports = {
     TREE,
     CATEGORYTREE,
     filterQuery,
+    mkdir
 };
 
 

@@ -15,6 +15,14 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1605063566141_1968';
 
+  config.uploadOrgin = 'http://127.0.0.1:8080'
+
+  // 上传地址
+  config.uploadUrl = {
+    image:'/app/public/image/',
+    file:'/app/public/file/',
+  }
+  
   // 中间件
   config.middleware = ['errorHandler'];
 

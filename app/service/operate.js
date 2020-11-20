@@ -49,6 +49,7 @@ class OperateService extends Service {
     return await app.mysql.delete('admin_role', { id });
   }
 
+  // 更改权限角色状态
   async changeRoleStatus(id, status) {
     const { app } = this;
     return await app.mysql.update('admin_role', {

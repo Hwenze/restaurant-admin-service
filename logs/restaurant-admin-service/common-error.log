@@ -129,3 +129,264 @@ hostname: fanhongkaideMacBook-Pro.local
 pid: 13579
 hostname: fanhongkaideMacBook-Pro.local
 
+2020-11-19 10:40:20,718 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 95553ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 11:08:23,334 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 1600247ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 11:26:27,907 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 104429ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 12:00:48,296 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 1280263ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 12:13:49,407 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 300467ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 12:17:34,690 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 185274ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 12:19:17,597 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 62890ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 13:00:40,856 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 2305309ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 13:56:58,535 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 116839ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 18:46:31,301 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 2109349ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 20:26:05,245 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 710509ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 20:30:11,370 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 246117ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 20:40:20,624 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 609247ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 21:20:53,603 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 301115ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 21:22:53,228 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 119619ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 21:31:54,977 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 301705ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 22:56:50,821 ERROR 810 nodejs.ClusterClientNoResponseError: client no response in 5095835ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 810
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:21:50,457 ERROR 4251 [-/127.0.0.1/-/11ms POST /api/uploadImage] nodejs.TypeError: Cannot read property 'uploadDir' of undefined
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:55:32)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4251
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:23:59,155 ERROR 4301 [-/127.0.0.1/-/19ms POST /api/uploadImage] nodejs.TypeError: Cannot read property 'uploadDir' of undefined
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:55:32)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4301
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:48:10,249 ERROR 4425 [-/127.0.0.1/-/12ms POST /api/uploadImage] nodejs.ReferenceError: mkdir is not defined
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:53:5)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4425
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:48:33,051 ERROR 4440 [-/127.0.0.1/-/17ms POST /api/uploadImage] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir 'app/public/image/20201104'
+    at Object.mkdirSync (fs.js:757:3)
+    at mkdir (/Volumes/projects/restaurant-admin-service/app/utils/index.js:115:12)
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:53:11)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -2
+syscall: "mkdir"
+code: "ENOENT"
+path: "app/public/image/20201104"
+name: "ENOENTError"
+pid: 4440
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-19 23:50:02,206 ERROR 4487 [-/127.0.0.1/-/15ms POST /api/uploadImage] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir '/app/public/image/20201104'
+    at Object.mkdirSync (fs.js:757:3)
+    at mkdir (/Volumes/projects/restaurant-admin-service/app/utils/index.js:115:12)
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:54:11)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -2
+syscall: "mkdir"
+code: "ENOENT"
+path: "/app/public/image/20201104"
+name: "ENOENTError"
+pid: 4487
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-20 10:06:34,690 ERROR 1608 [-/127.0.0.1/-/11ms POST /api/uploadImage] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir '/app/public/image/20201105'
+    at Object.mkdirSync (fs.js:757:3)
+    at mkdir (/Volumes/projects/restaurant-admin-service/app/utils/index.js:115:12)
+    at CommonService.getUploadFileDirname (/Volumes/projects/restaurant-admin-service/app/service/common.js:54:11)
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:53:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -2
+syscall: "mkdir"
+code: "ENOENT"
+path: "/app/public/image/20201105"
+name: "ENOENTError"
+pid: 1608
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-20 10:11:37,303 ERROR 1604 nodejs.ClusterClientNoResponseError: client no response in 145183ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 1604
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-20 10:38:31,373 ERROR 2151 [-/127.0.0.1/-/15ms POST /api/uploadImage] nodejs.ReferenceError: app is not defined
+    at CommonController.uploadImage (/Volumes/projects/restaurant-admin-service/app/controller/common.js:60:24)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 2151
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-20 14:23:35,648 ERROR 1604 nodejs.ClusterClientNoResponseError: client no response in 173623ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 1604
+hostname: fanhongkaideMacBook-Pro.local
+

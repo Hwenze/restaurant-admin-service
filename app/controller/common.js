@@ -2,6 +2,9 @@
 
 const Controller = require('egg').Controller;
 const { cb } = require('../utils/index');
+const pump = require('mz-modules/pump');
+const path = require('path');
+const fs = require('fs');
 
 class CommonController extends Controller {
 
@@ -29,6 +32,41 @@ class CommonController extends Controller {
         } else {
             ctx.body = cb({ code: 500 });
             return;
+        }
+    }
+
+    // 上传组件
+    async uploadImage() {
+        const { ctx, app } = this;
+
+        const parts = ctx.multipart({ autoFields: true });
+        let files = {};
+        // 文件流
+        let stream;
+        while ((stream = await parts()) != null) {
+            if (!stream.filename) {
+                break;
+            }
+            // 上传图片的目录
+            const dir = await ctx.service.common.getUploadFileDirname(stream);
+            const target = dir.systemPath;
+            // 将图片存进库
+            const writeStream = fs.createWriteStream(target);
+            // 结束
+            await pump(stream, writeStream);
+
+            files = {
+                image: dir.image,
+                url: `${app.config.uploadOrgin}/public${dir.image}`,
+                orgin: dir.imageUrl,
+                system: dir.systemPath
+            }
+            
+        }
+        if(files.url){
+            ctx.body = cb({ data: files });
+        }else{
+            ctx.body = cb({ msg:'上传失败' });
         }
     }
 

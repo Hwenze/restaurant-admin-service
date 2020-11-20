@@ -5,6 +5,7 @@ import 'egg';
 import ExportCommon = require('../../../app/controller/common');
 import ExportHome = require('../../../app/controller/home');
 import ExportOperate = require('../../../app/controller/operate');
+import ExportProduct = require('../../../app/controller/product');
 import ExportUser = require('../../../app/controller/user');
 
 declare module 'egg' {
@@ -12,6 +13,7 @@ declare module 'egg' {
     common: ExportCommon;
     home: ExportHome;
     operate: ExportOperate;
+    product: ExportProduct;
     user: ExportUser;
   }
 }

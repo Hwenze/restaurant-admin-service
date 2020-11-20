@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 19/11/2020 01:07:56
+ Date: 20/11/2020 16:38:36
 */
 
 SET NAMES utf8mb4;
@@ -22,14 +22,24 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_category`;
 CREATE TABLE `admin_category` (
-  `id` int NOT NULL COMMENT '分类id',
-  `name` int DEFAULT NULL COMMENT '分类名称',
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '分类id',
+  `name` varchar(50) DEFAULT NULL COMMENT '分类名称',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `operator` int DEFAULT NULL COMMENT '操作者',
-  `sort` int DEFAULT NULL COMMENT '排序',
-  `status` int DEFAULT NULL COMMENT '状态',
+  `sort` int DEFAULT '1' COMMENT '排序',
+  `status` int DEFAULT '1' COMMENT '状态',
+  `desc` varchar(0) DEFAULT NULL COMMENT '说明',
+  `admin_id` int DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='商品分类';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='商品分类';
+
+-- ----------------------------
+-- Records of admin_category
+-- ----------------------------
+BEGIN;
+INSERT INTO `admin_category` VALUES (1, '饮料、汽水', '2020-11-19 16:40:33', NULL, 1, 1, NULL, 1);
+INSERT INTO `admin_category` VALUES (2, '其他', '2020-11-20 15:12:40', NULL, 2, 0, NULL, 1);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for admin_role
@@ -115,7 +125,7 @@ CREATE TABLE `admin_userinfo` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `admin_userinfo` VALUES (1, 'admin', 'admin', '2020-11-11 15:46:22', 'e10adc3949ba59abbe56e057f20f883e', 1, 1, 1);
-INSERT INTO `admin_userinfo` VALUES (2, 'joker', '文泽大保健店小二', '2020-11-17 11:14:44', 'e10adc3949ba59abbe56e057f20f883e', 2, 1, 1);
+INSERT INTO `admin_userinfo` VALUES (2, 'joker', '文泽大保健店小二', '2020-11-17 11:14:44', 'e10adc3949ba59abbe56e057f20f883e', 2, 1, 0);
 COMMIT;
 
 -- ----------------------------
@@ -174,18 +184,30 @@ CREATE TABLE `order_snapshot` (
 -- ----------------------------
 DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
-  `id` int NOT NULL COMMENT '菜肴id',
-  `title` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '菜品标题',
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '菜肴id',
+  `title` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '菜品标题',
   `banner` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT '轮播图',
-  `tag` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '菜品标签',
-  `price` double DEFAULT NULL COMMENT '菜品价格',
+  `category_ids` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '菜品标签',
+  `price` double unsigned NOT NULL COMMENT '菜品价格',
   `desc` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT '详情',
-  `sub_title` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '副标题',
+  `sub_title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '副标题',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `operator` int DEFAULT NULL COMMENT '操作者',
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `admin_id` int DEFAULT NULL COMMENT '店铺id',
+  `status` int DEFAULT '1',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='菜肴商品表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='菜肴商品表';
+
+-- ----------------------------
+-- Records of product
+-- ----------------------------
+BEGIN;
+INSERT INTO `product` VALUES (1, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/1605851158469uqmxf3hel.jpg', '1', 3, NULL, '冰镇一下更可口哦', '2020-11-19 14:02:19', 1, '2020-11-20 14:43:45', 1, 1);
+INSERT INTO `product` VALUES (2, '可口可乐1', 'http://127.0.0.1:8080/public/20201105/1605856143247k7nh2yir.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:14', 1, NULL, 1, 1);
+INSERT INTO `product` VALUES (3, '可口可乐1', 'http://127.0.0.1:8080/public/20201105/1605856143247k7nh2yir.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:20', 1, NULL, 1, 1);
+INSERT INTO `product` VALUES (4, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/16058565592824xtikscn.jpg', '2', 2, NULL, NULL, '2020-11-20 15:16:07', 1, '2020-11-20 15:59:34', 1, 1);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for user_agreement

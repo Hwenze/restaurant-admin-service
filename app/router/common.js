@@ -7,5 +7,6 @@ module.exports = app => {
   const { router, controller, middleware } = app;
   router.get('/api/getAgreement', controller.common.queryuserAgreement);
   router.post('/api/setAgreement', controller.common.updateuserAgreement);
+  router.post('/api/uploadImage', controller.common.uploadImage);
 };
 
