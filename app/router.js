@@ -9,4 +9,5 @@ module.exports = app => {
   require('./router/user')(app);
   require('./router/operate')(app);
   require('./router/product')(app);
+  require('./router/activity')(app);
 };
