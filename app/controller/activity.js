@@ -25,7 +25,6 @@ class ActivityController extends Controller {
     // 查询活动资讯详情
     async getRealTimeDateils() {
         const { ctx } = this;
-        console.log(ctx.query.id)
         const params = ctx.query.id;
         const result = await ctx.service.activity.getRealTimeDateils(params);
         if (result) {
@@ -42,14 +41,21 @@ class ActivityController extends Controller {
         const { ctx } = this;
         const isPass = {
             number: [],
-            string: ['title', 'star_time', 'end_time', 'content']
+            string: ['title', 'introduce', 'star_time', 'end_time', 'content']
         }
         const query = filterQuery(ctx.request.body, isPass);
-        const { title, star_time, end_time, content } = query.column;
+        const { title, star_time, introduce, end_time, content } = query.column;
         if (!title) {
             ctx.body = cb({
                 code: 1000,
                 msg: '活动标题不能为空',
+            });
+            return;
+        }
+        if (!introduce) {
+            ctx.body = cb({
+                code: 1000,
+                msg: '活动介绍不能为空',
             });
             return;
         }
@@ -62,6 +68,7 @@ class ActivityController extends Controller {
         }
         let result = {
             title: title,
+            introduce: introduce,
             star_time: star_time,
             end_time: end_time,
             content: content,
@@ -80,15 +87,29 @@ class ActivityController extends Controller {
     async updateRealTimeInfo() {
         const { ctx } = this;
         const isPass = {
-            number: [],
-            string: ['title', 'star_time', 'end_time', 'content']
+            number: ['id'],
+            string: ['title', 'introduce', 'star_time', 'end_time', 'content']
         }
         const query = filterQuery(ctx.request.body, isPass);
-        const { title, star_time, end_time, content } = query.column;
+        const { id, title, introduce, star_time, end_time, content } = query.column;
+        if (!id) {
+            ctx.body = cb({
+                code: 1000,
+                msg: '活动ID不能为空',
+            });
+            return;
+        }
         if (!title) {
             ctx.body = cb({
                 code: 1000,
                 msg: '活动标题不能为空',
+            });
+            return;
+        }
+        if (!introduce) {
+            ctx.body = cb({
+                code: 1000,
+                msg: '活动介绍不能为空',
             });
             return;
         }
@@ -100,17 +121,19 @@ class ActivityController extends Controller {
             return;
         }
         let result = {
+            id: id,
             title: title,
+            introduce: introduce,
             star_time: star_time,
             end_time: end_time,
             content: content,
         }
-        const insertReuslt = await ctx.service.activity.insertaddRealTimeInfo(result);
+        const insertReuslt = await ctx.service.activity.updateRealTimeInfo(result);
         if (insertReuslt && insertReuslt.affectedRows === 1) {
-            ctx.body = cb({ data: '新增成功' });
+            ctx.body = cb({ data: '编辑成功' });
             return;
         } else {
-            ctx.body = cb({ code: 500, msg: '新增失败' });
+            ctx.body = cb({ code: 500, msg: '编辑失败' });
             return;
         }
     }

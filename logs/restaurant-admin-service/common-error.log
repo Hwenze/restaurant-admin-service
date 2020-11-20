@@ -208,3 +208,46 @@ name: "unhandledExceptionError"
 pid: 3236
 hostname: LAPTOP-MG1SDB3P
 
+2020-11-20 13:44:22,231 ERROR 15168 nodejs.ClusterClientNoResponseError: client no response in 6843274ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (D:\HongZe-studio\restaurant-admin-service\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 15168
+hostname: LAPTOP-MG1SDB3P
+
+2020-11-20 15:33:45,060 ERROR 15168 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15168
+hostname: LAPTOP-MG1SDB3P
+
+2020-11-20 15:41:34,171 ERROR 14016 [-/127.0.0.1/-/5ms GET /api/getHomeRotation] nodejs.TypeError: ctx.service.activity.queryHomeRotation is not a function
+    at CommonController.queryHomeRotation (D:\HongZe-studio\restaurant-admin-service\app\controller\common.js:38:51)
+    at Object.callFn (D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\HongZe-studio\restaurant-admin-service\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\HongZe-studio\restaurant-admin-service\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\HongZe-studio\restaurant-admin-service\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\HongZe-studio\restaurant-admin-service\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\HongZe-studio\restaurant-admin-service\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 14016
+hostname: LAPTOP-MG1SDB3P
+
+2020-11-20 16:34:33,835 ERROR 15168 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15168
+hostname: LAPTOP-MG1SDB3P
+
