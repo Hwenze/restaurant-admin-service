@@ -101,23 +101,6 @@ class ProductController extends Controller {
     }
   }
 
-  // 上下架商品
-  async changeProductStatus() {
-    const { ctx } = this;
-    const { id } = ctx.request.body;
-    // 查询操作者信息
-    const { admin_id = '' } = await ctx.service.common.getUserInfo();
-    // 查询被操作的用户信息
-    const productInfo = await ctx.service.product.queryProductInfoById(id);
-    if (productInfo && productInfo.admin_id === admin_id) {
-      const result = await ctx.service.product.changeProductStatus(productInfo.id, productInfo.status === 1 ? 0 : 1);
-      ctx.body = cb(result ? { msg: '操作成功' } : { code: 500, msg: '操作失败' });
-    } else {
-      // 非店铺信息
-      ctx.body = cb({ code: 500, msg: '商品不存在' });
-    }
-  }
-
   // 上下架分类
   async changeCategoryStatus() {
     const { ctx } = this;
@@ -134,7 +117,23 @@ class ProductController extends Controller {
       ctx.body = cb({ code: 500, msg: '分类不存在' });
     }
   }
+  // 添加或者保存商品分类
+  async updateOrInsertCategory() {
 
+    const { ctx } = this;
+    const isPass = {
+      number: ['id'],
+      string: ['name', 'image', 'desc']
+    }
+    const { column } = filterQuery(ctx.request.body, isPass);
+    if (column.id) {
+      const updateResult = await ctx.service.product.updateCategory(column);
+      ctx.body = cb({ msg: updateResult ? '保存成功' : '保存失败' });
+    } else {
+      const insertReuslt = await ctx.service.product.insertCategory(column);
+      ctx.body = cb({ msg: insertReuslt ? '创建成功' : '创建失败' });
+    }
+  }
 }
 
 module.exports = ProductController;

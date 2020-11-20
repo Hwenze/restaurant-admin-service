@@ -24,7 +24,7 @@ class ProductService extends Service {
     const { pageSize = 10, current = 0 } = page;
     // console.log(query,admin_id);
     const result = await app.mysql.select('admin_category', {
-      columns: ['id', 'name', 'create_time', 'sort', 'status'],
+      columns: ['id', 'name', 'create_time', 'sort', 'status', 'image', 'operator'],
       where: { admin_id, ...column }, // WHERE 条件
       orders: [['sort', 'desc']], // 排序方式
       limit: pageSize,
@@ -45,21 +45,24 @@ class ProductService extends Service {
 
   }
 
+  // 更新商品
   async updateProductInfo(column) {
     const { app, ctx } = this;
     const { id, ...query } = column;
-    return await app.mysql.update('product', { ...query }, {
+    const result = await app.mysql.update('product', { ...query }, {
       where: { id }, // WHERE 条件
     });
+    return result.affectedRows === 1;
   }
 
   // 创建商品
   async insertProduct(column) {
     const { app, ctx } = this;
     const { id = '', admin_id = '' } = await ctx.service.common.getUserInfo();
-    return await app.mysql.insert('product', {
+    const result = await app.mysql.insert('product', {
       operator: id, admin_id, ...column
     });
+    return result;
   }
 
   // 查询商品列表
@@ -91,22 +94,45 @@ class ProductService extends Service {
   // 商品上下架
   async changeProductStatus(id, status) {
     const { app } = this;
-    return await app.mysql.update('product', {
+    const result = await app.mysql.update('product', {
       status: status
     }, {
       where: { id }
     })
+    return result.affectedRows === 1;
   }
 
   // 商品上下架
   async changeCategoryStatus(id, status) {
     const { app } = this;
-    return await app.mysql.update('admin_category', {
+    const result = await app.mysql.update('admin_category', {
       status: status
     }, {
       where: { id }
     })
+    return result.affectedRows === 1;
   }
+
+  // 更新分类
+  async updateCategory(column) {
+    const { app, ctx } = this;
+    const { id, ...query } = column;
+    const result = await app.mysql.update('admin_category', query, {
+      where: { id }
+    })
+    return result.affectedRows === 1;
+  }
+
+  // 创建分类
+  async insertCategory(column) {
+    const { app, ctx } = this;
+    const { id = '', admin_id = '' } = await ctx.service.common.getUserInfo();
+    const result = await app.mysql.insert('admin_category', {
+      operator: id, admin_id, ...column
+    });
+    return result.affectedRows === 1;
+  }
+
 }
 
 module.exports = ProductService;
