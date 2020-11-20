@@ -1471,3 +1471,6 @@
 2020-11-20 16:39:50,224 INFO 7889 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-multipart@2.10.3@egg-multipart/app/schedule/clean_tmpdir.js
 2020-11-20 16:39:50,225 INFO 7889 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
 2020-11-20 16:39:50,225 INFO 7889 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2020-11-20 17:28:11,875 INFO 11175 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-multipart@2.10.3@egg-multipart/app/schedule/clean_tmpdir.js
+2020-11-20 17:28:11,875 INFO 11175 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2020-11-20 17:28:11,875 INFO 11175 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js

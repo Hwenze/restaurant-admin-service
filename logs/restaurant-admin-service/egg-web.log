@@ -7617,3 +7617,18 @@
 2020-11-20 16:39:50,346 INFO 7889 [egg-watcher:application] watcher start success
 2020-11-20 16:39:50,349 INFO 7889 [egg-mysql] instance[0] status OK, rds currentTime: Fri Nov 20 2020 16:39:50 GMT+0800 (GMT+08:00)
 2020-11-20 16:39:50,355 INFO 7889 [egg:core] dump config after ready, 4ms
+2020-11-20 17:28:11,844 INFO 11175 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-20 17:28:11,876 INFO 11175 [egg-multipart] stream mode enable
+2020-11-20 17:28:11,876 INFO 11175 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-20 17:28:11,961 INFO 11175 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-20 17:28:11,963 INFO 11175 [egg-security] use methodnoallow middleware
+2020-11-20 17:28:11,963 INFO 11175 [egg-security] use noopen middleware
+2020-11-20 17:28:11,963 INFO 11175 [egg-security] use nosniff middleware
+2020-11-20 17:28:11,964 INFO 11175 [egg-security] use xssProtection middleware
+2020-11-20 17:28:11,964 INFO 11175 [egg-security] use xframe middleware
+2020-11-20 17:28:11,964 INFO 11175 [egg-security] use dta middleware
+2020-11-20 17:28:11,964 INFO 11175 [egg-security] compose 6 middlewares into one security middleware
+2020-11-20 17:28:11,980 INFO 11175 [egg:core] dump config after load, 5ms
+2020-11-20 17:28:11,995 INFO 11175 [egg-watcher:application] watcher start success
+2020-11-20 17:28:11,998 INFO 11175 [egg-mysql] instance[0] status OK, rds currentTime: Fri Nov 20 2020 17:28:11 GMT+0800 (GMT+08:00)
+2020-11-20 17:28:12,004 INFO 11175 [egg:core] dump config after ready, 4ms
