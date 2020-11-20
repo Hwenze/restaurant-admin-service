@@ -10,6 +10,8 @@ module.exports = app => {
   router.post('/api/setAgreement', jwt, controller.common.updateuserAgreement);
   router.post('/api/uploadImage', controller.common.uploadImage);
   router.get('/api/getHomeRotation', jwt, controller.common.queryHomeRotation);
+  router.get('/api/getRotationDateils', jwt, controller.common.getRotationDateils);
   router.post('/api/changeRotationStatus', jwt, controller.common.changeRotationStatus);
+  router.post('/api/updateRotationDateils', jwt, controller.common.updateRotationDateils);
 };
 
