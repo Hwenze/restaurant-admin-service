@@ -13,6 +13,8 @@ node_modules/
 npm-debug.log
 */log
 *.log
+
+log/*
 .idea/
 dist
 static

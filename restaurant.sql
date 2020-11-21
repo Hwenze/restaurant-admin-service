@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 20/11/2020 17:31:31
+ Date: 21/11/2020 16:56:23
 */
 
 SET NAMES utf8mb4;
@@ -32,7 +32,7 @@ CREATE TABLE `admin_category` (
   `admin_id` int DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='商品分类';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='商品分类';
 
 -- ----------------------------
 -- Records of admin_category
@@ -40,6 +40,7 @@ CREATE TABLE `admin_category` (
 BEGIN;
 INSERT INTO `admin_category` VALUES (1, '饮料、汽水', '2020-11-19 16:40:33', NULL, 1, 1, NULL, 1, NULL);
 INSERT INTO `admin_category` VALUES (2, '其他', '2020-11-20 15:12:40', NULL, 2, 0, NULL, 1, NULL);
+INSERT INTO `admin_category` VALUES (3, '麻辣', '2020-11-20 17:34:33', 1, 1, 1, NULL, 1, 'http://127.0.0.1:8080/public/20201105/16058648730652e5jvpfr5.jpg');
 COMMIT;
 
 -- ----------------------------
@@ -123,14 +124,15 @@ CREATE TABLE `admin_userinfo` (
   `admin_id` int DEFAULT NULL COMMENT '店id',
   `status` int DEFAULT '1' COMMENT '1:正常0:冻结',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of admin_userinfo
 -- ----------------------------
 BEGIN;
 INSERT INTO `admin_userinfo` VALUES (1, 'admin', 'admin', '2020-11-11 15:46:22', 'e10adc3949ba59abbe56e057f20f883e', 1, 1, 1);
-INSERT INTO `admin_userinfo` VALUES (2, 'joker', '文泽大保健店小二', '2020-11-17 11:14:44', 'e10adc3949ba59abbe56e057f20f883e', 2, 1, 0);
+INSERT INTO `admin_userinfo` VALUES (2, 'joker', '文泽大保健店小二', '2020-11-17 11:14:44', 'e10adc3949ba59abbe56e057f20f883e', 2, 2, 1);
+INSERT INTO `admin_userinfo` VALUES (3, 'test', '技师8号', '2020-11-21 15:06:21', '6ac1e56bc78f031059be7be854522c4c', 2, 1, 1);
 COMMIT;
 
 -- ----------------------------
@@ -194,6 +196,8 @@ CREATE TABLE `order` (
   `people_num` int DEFAULT NULL COMMENT '客户人数',
   `pay_time` timestamp NULL DEFAULT NULL COMMENT '支付时间',
   `pay_status` int DEFAULT NULL COMMENT '支付状态',
+  `admin_id` int DEFAULT NULL,
+  `order_id` int DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单表';
 
@@ -205,7 +209,11 @@ CREATE TABLE `order_snapshot` (
   `id` int NOT NULL COMMENT '订单商品快照id',
   `order_id` int DEFAULT NULL COMMENT '订单id',
   `product_id` int DEFAULT NULL COMMENT '商品id',
-  `num` int DEFAULT NULL COMMENT '商品数量',
+  `count` int DEFAULT NULL COMMENT '商品数量',
+  `title` varchar(0) DEFAULT NULL,
+  `banner` varchar(0) DEFAULT NULL,
+  `price` double DEFAULT NULL COMMENT '快照单价',
+  `total_price` double DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单商品快照';
 
@@ -227,7 +235,7 @@ CREATE TABLE `product` (
   `admin_id` int DEFAULT NULL COMMENT '店铺id',
   `status` int DEFAULT '1',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='菜肴商品表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='菜肴商品表';
 
 -- ----------------------------
 -- Records of product
@@ -236,7 +244,8 @@ BEGIN;
 INSERT INTO `product` VALUES (1, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/1605851158469uqmxf3hel.jpg', '1', 3, NULL, '冰镇一下更可口哦', '2020-11-19 14:02:19', 1, '2020-11-20 14:43:45', 1, 1);
 INSERT INTO `product` VALUES (2, '可口可乐1', 'http://127.0.0.1:8080/public/20201105/1605856143247k7nh2yir.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:14', 1, NULL, 1, 1);
 INSERT INTO `product` VALUES (3, '可口可乐1', 'http://127.0.0.1:8080/public/20201105/1605856143247k7nh2yir.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:20', 1, NULL, 1, 1);
-INSERT INTO `product` VALUES (4, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/16058565592824xtikscn.jpg', '2', 2, NULL, NULL, '2020-11-20 15:16:07', 1, '2020-11-20 15:59:34', 1, 1);
+INSERT INTO `product` VALUES (4, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/16058565592824xtikscn.jpg', '2,1', 2, NULL, NULL, '2020-11-20 15:16:07', 1, '2020-11-21 15:14:42', 1, 0);
+INSERT INTO `product` VALUES (5, '123', 'http://127.0.0.1:8080/public/20201106/1605945281087fgdlwk4oj.jpg', '1', 2, NULL, NULL, '2020-11-21 15:54:47', 1, NULL, 1, 1);
 COMMIT;
 
 -- ----------------------------
