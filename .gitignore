@@ -1,7 +1,7 @@
 .idea/
 package-lock.json
 node_modules/
-!app/typings/
+app/typings/
 run/
 test/
 typings/
@@ -15,6 +15,7 @@ npm-debug.log
 *.log
 
 log/*
+/log/*
 .idea/
 dist
 static
