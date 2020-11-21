@@ -14,8 +14,8 @@ npm-debug.log
 */log
 *.log
 
-log/*
-/log/*
+logs/*
+/logs/*
 .idea/
 dist
 static
@@ -27,7 +27,10 @@ artifacts.json
 tmp/
 *tmp
 _site
-logs
+logs/restaurant-admin-service/*
+logs/restaurant-admin-service
+/logs/restaurant-admin-service/*
+/logs/restaurant-admin-service
 .vscode
 config/buildConfig.json
 config/manifest.json
