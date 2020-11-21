@@ -77,6 +77,18 @@ class CommonService extends Service {
     return await app.mysql.update('home_rotation',{ id: adopt.id, status: adopt.status === 1 ? 0 : 1 });
   }
 
+  // 获取轮播详情
+  async getRotationDateils(id) {
+    const { app } = this;
+    return await app.mysql.get('home_rotation', id);
+  }
+
+  // 更改轮播详情
+  async updateRotationDateils(column) {
+    const { app } = this;
+    return await app.mysql.update('home_rotation', { ...column });
+  }
+
 }
 
 module.exports = CommonService;

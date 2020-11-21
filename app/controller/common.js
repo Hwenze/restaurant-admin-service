@@ -1,7 +1,7 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-const { cb } = require('../utils/index');
+const { cb, filterQuery } = require('../utils/index');
 const pump = require('mz-modules/pump');
 const path = require('path');
 const fs = require('fs');
@@ -88,6 +88,65 @@ class CommonController extends Controller {
         const { ctx } = this;
         const result = await ctx.service.common.changeRotationStatus(ctx.request.body);
         ctx.body = cb(result ? { msg: '修改成功' } : { code: 500, msg: '修改失败' });
+    }
+
+    // 获取轮播详情
+    async getRotationDateils() {
+        const { ctx } = this;
+        const result = await ctx.service.common.getRotationDateils(ctx.query);
+        if (result) {
+            ctx.body = cb({ data: result });
+            return;
+        } else {
+            ctx.body = cb({ code: 500 });
+            return;
+        }
+    }
+
+    // 更改活动资讯
+    async updateRotationDateils() {
+        const { ctx } = this;
+        const isPass = {
+            number: ['id', 'sort', 'status'],
+            string: ['picture']
+        }
+        const query = filterQuery(ctx.request.body, isPass);
+        const { id, picture, sort, status } = query.column;
+        if (!id) {
+            ctx.body = cb({
+                code: 1000,
+                msg: 'ID不能为空',
+            });
+            return;
+        }
+        if (!picture) {
+            ctx.body = cb({
+                code: 1000,
+                msg: '轮播图不能为空',
+            });
+            return;
+        }
+        if (!sort) {
+            ctx.body = cb({
+                code: 1000,
+                msg: '权重排序不能为空',
+            });
+            return;
+        }
+        let result = {
+            id: id,
+            picture: picture,
+            sort: sort,
+            status: status,
+        }
+        const insertReuslt = await ctx.service.common.updateRotationDateils(result);
+        if (insertReuslt && insertReuslt.affectedRows === 1) {
+            ctx.body = cb({ data: '保存成功' });
+            return;
+        } else {
+            ctx.body = cb({ code: 500, msg: '保存失败' });
+            return;
+        }
     }
 
 }
