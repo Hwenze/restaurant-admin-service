@@ -107,13 +107,24 @@ const filterQuery = (target, params) => {
     }
     return query;
 
-    
+
 
 }
-const mkdir = (dirName)=>{
-    if(!fs.existsSync(dirName)){
+const mkdir = (dirName) => {
+    if (!fs.existsSync(dirName)) {
         fs.mkdirSync(dirName)
     }
+}
+
+const createOrderId = () => {
+    const nowTime = new Date();
+    // 随机数
+    const random = parseInt(Math.random(1000) * 1000);
+    // 年月日
+    const day = `${nowTime.getFullYear()}${nowTime.getMonth() + 1}${nowTime.getDate() > 10 ? nowTime.getDate() : '0' + nowTime.getDate()}`;
+    // 订单id
+    const order_id = `${day}${nowTime.getHours() * 3600 + nowTime.getMinutes() * 60 + nowTime.getSeconds()}${random}`;
+    return order_id;
 }
 
 
@@ -123,7 +134,8 @@ module.exports = {
     TREE,
     CATEGORYTREE,
     filterQuery,
-    mkdir
+    mkdir,
+    createOrderId
 };
 
 

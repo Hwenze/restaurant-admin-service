@@ -6,6 +6,7 @@ import ExportActivity = require('../../../app/controller/activity');
 import ExportCommon = require('../../../app/controller/common');
 import ExportHome = require('../../../app/controller/home');
 import ExportOperate = require('../../../app/controller/operate');
+import ExportOrder = require('../../../app/controller/order');
 import ExportProduct = require('../../../app/controller/product');
 import ExportUser = require('../../../app/controller/user');
 
@@ -15,6 +16,7 @@ declare module 'egg' {
     common: ExportCommon;
     home: ExportHome;
     operate: ExportOperate;
+    order: ExportOrder;
     product: ExportProduct;
     user: ExportUser;
   }

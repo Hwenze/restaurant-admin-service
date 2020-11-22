@@ -46,7 +46,7 @@ class CommonService extends Service {
     } else {
       rootPath = app.config.uploadUrl.file;
     }
-    const day = `${timer.getFullYear()}${timer.getMonth() + 1}${timer.getDay() > 10 ? timer.getDay() : '0' + timer.getDay()}`;
+    const day = `${timer.getFullYear()}${timer.getMonth() + 1}${timer.getDate() > 10 ? timer.getDate() : '0' + timer.getDate()}`;
     const filename = (new Date().getTime() + Math.random().toString(36).substr(4) + path.extname(stream.filename).toLocaleLowerCase());
     // const resultPath = path.join(rootPath, day);
     // 测试地址
