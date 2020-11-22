@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 21/11/2020 16:56:23
+ Date: 22/11/2020 23:00:38
 */
 
 SET NAMES utf8mb4;
@@ -38,9 +38,9 @@ CREATE TABLE `admin_category` (
 -- Records of admin_category
 -- ----------------------------
 BEGIN;
-INSERT INTO `admin_category` VALUES (1, '饮料、汽水', '2020-11-19 16:40:33', NULL, 1, 1, NULL, 1, NULL);
-INSERT INTO `admin_category` VALUES (2, '其他', '2020-11-20 15:12:40', NULL, 2, 0, NULL, 1, NULL);
-INSERT INTO `admin_category` VALUES (3, '麻辣', '2020-11-20 17:34:33', 1, 1, 1, NULL, 1, 'http://127.0.0.1:8080/public/20201105/16058648730652e5jvpfr5.jpg');
+INSERT INTO `admin_category` VALUES (1, '饮料、汽水', '2020-11-19 16:40:33', 1, 1, 1, NULL, 1, 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606067176162&di=da298234f28102ee7b1595929f620320&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171207%2F24ea177e9caf46c6b59d11ed5df14e54.jpeg');
+INSERT INTO `admin_category` VALUES (2, '其他', '2020-11-20 15:12:40', 1, 2, 0, NULL, 1, 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3722815331,2657432749&fm=26&gp=0.jpg');
+INSERT INTO `admin_category` VALUES (3, '麻辣', '2020-11-20 17:34:33', 1, 1, 1, NULL, 1, 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1488573834,725410443&fm=26&gp=0.jpg');
 COMMIT;
 
 -- ----------------------------
@@ -167,9 +167,9 @@ DROP TABLE IF EXISTS `member`;
 CREATE TABLE `member` (
   `id` int NOT NULL AUTO_INCREMENT COMMENT '用户id',
   `open_id` int NOT NULL COMMENT '微信id',
-  `avatar` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '用户头像',
+  `avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '用户头像',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `nickname` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '用户昵称',
+  `nickname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '用户昵称',
   PRIMARY KEY (`id`,`open_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='用户信息表';
 
@@ -177,7 +177,7 @@ CREATE TABLE `member` (
 -- Records of member
 -- ----------------------------
 BEGIN;
-INSERT INTO `member` VALUES (1, 1, NULL, '2020-11-11 15:18:57', NULL);
+INSERT INTO `member` VALUES (1, 1, 'http://fhk255.cn/wp-content/uploads/2020/02/joker.jpg', '2020-11-11 15:18:57', '小饭');
 COMMIT;
 
 -- ----------------------------
@@ -185,37 +185,52 @@ COMMIT;
 -- ----------------------------
 DROP TABLE IF EXISTS `order`;
 CREATE TABLE `order` (
-  `id` int NOT NULL COMMENT '订单id',
-  `total_price` double DEFAULT NULL COMMENT '订单总额',
-  `real_price` double DEFAULT NULL COMMENT '实付金额',
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '订单id',
+  `total_price` double DEFAULT '0' COMMENT '订单总额',
+  `real_price` double DEFAULT '0' COMMENT '实付金额',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '下单时间',
   `status` int DEFAULT NULL COMMENT '订单状态',
-  `user_id` int DEFAULT NULL COMMENT '用户id',
+  `member_id` int DEFAULT NULL COMMENT '用户id',
   `remark` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '备注',
-  `table_number` int DEFAULT NULL COMMENT '座位号',
-  `people_num` int DEFAULT NULL COMMENT '客户人数',
+  `table_num` int DEFAULT NULL COMMENT '座位号',
+  `people_num` int NOT NULL COMMENT '客户人数',
   `pay_time` timestamp NULL DEFAULT NULL COMMENT '支付时间',
-  `pay_status` int DEFAULT NULL COMMENT '支付状态',
   `admin_id` int DEFAULT NULL,
-  `order_id` int DEFAULT NULL,
+  `order_id` bigint DEFAULT NULL,
+  `tea_price` double DEFAULT NULL COMMENT '茶位费',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单表';
+
+-- ----------------------------
+-- Records of order
+-- ----------------------------
+BEGIN;
+INSERT INTO `order` VALUES (1, 12, 12, '2020-11-22 18:41:14', 0, 1, NULL, 1, 2, NULL, 1, 2020112267200950, 4);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for order_snapshot
 -- ----------------------------
 DROP TABLE IF EXISTS `order_snapshot`;
 CREATE TABLE `order_snapshot` (
-  `id` int NOT NULL COMMENT '订单商品快照id',
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '订单商品快照id',
   `order_id` int DEFAULT NULL COMMENT '订单id',
   `product_id` int DEFAULT NULL COMMENT '商品id',
   `count` int DEFAULT NULL COMMENT '商品数量',
-  `title` varchar(0) DEFAULT NULL,
-  `banner` varchar(0) DEFAULT NULL,
-  `price` double DEFAULT NULL COMMENT '快照单价',
-  `total_price` double DEFAULT NULL,
+  `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `banner` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `price` double DEFAULT '0' COMMENT '快照单价',
+  `total_price` double DEFAULT '0',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单商品快照';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单商品快照';
+
+-- ----------------------------
+-- Records of order_snapshot
+-- ----------------------------
+BEGIN;
+INSERT INTO `order_snapshot` VALUES (1, 1, 1, 2, '可口可乐', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606066317983&di=835aa7b8d8f7ca520bc921f0013ffe6a&imgtype=0&src=http%3A%2F%2F4888152.s21i-4.faidns.com%2F2%2FABUIABACGAAgzvv_pQUog7udqwQwrAI4rAI.jpg', 3, 6);
+INSERT INTO `order_snapshot` VALUES (2, 1, 2, 1, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3987685708,3519441173&fm=26&gp=0.jpg', 2, 2);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for product
@@ -241,11 +256,11 @@ CREATE TABLE `product` (
 -- Records of product
 -- ----------------------------
 BEGIN;
-INSERT INTO `product` VALUES (1, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/1605851158469uqmxf3hel.jpg', '1', 3, NULL, '冰镇一下更可口哦', '2020-11-19 14:02:19', 1, '2020-11-20 14:43:45', 1, 1);
-INSERT INTO `product` VALUES (2, '可口可乐1', 'http://127.0.0.1:8080/public/20201105/1605856143247k7nh2yir.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:14', 1, NULL, 1, 1);
-INSERT INTO `product` VALUES (3, '可口可乐1', 'http://127.0.0.1:8080/public/20201105/1605856143247k7nh2yir.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:20', 1, NULL, 1, 1);
-INSERT INTO `product` VALUES (4, '可口可乐2', 'http://127.0.0.1:8080/public/20201105/16058565592824xtikscn.jpg', '2,1', 2, NULL, NULL, '2020-11-20 15:16:07', 1, '2020-11-21 15:14:42', 1, 0);
-INSERT INTO `product` VALUES (5, '123', 'http://127.0.0.1:8080/public/20201106/1605945281087fgdlwk4oj.jpg', '1', 2, NULL, NULL, '2020-11-21 15:54:47', 1, NULL, 1, 1);
+INSERT INTO `product` VALUES (1, '可口可乐', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606066317983&di=835aa7b8d8f7ca520bc921f0013ffe6a&imgtype=0&src=http%3A%2F%2F4888152.s21i-4.faidns.com%2F2%2FABUIABACGAAgzvv_pQUog7udqwQwrAI4rAI.jpg', '1', 3, NULL, '冰镇一下更可口哦', '2020-11-19 14:02:19', 1, '2020-11-22 22:44:07', 1, 1);
+INSERT INTO `product` VALUES (2, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3987685708,3519441173&fm=26&gp=0.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:14', 1, '2020-11-22 22:44:25', 1, 1);
+INSERT INTO `product` VALUES (3, '王老吉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1686637159,3901112649&fm=26&gp=0.jpg', NULL, 2, NULL, NULL, '2020-11-20 15:09:20', 1, '2020-11-22 22:44:51', 1, 1);
+INSERT INTO `product` VALUES (4, '红烧排骨', 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3438952604,626888534&fm=26&gp=0.jpg', '2,1', 2, NULL, NULL, '2020-11-20 15:16:07', 1, '2020-11-22 22:45:13', 1, 0);
+INSERT INTO `product` VALUES (5, '辣椒炒肉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1815888668,904241512&fm=26&gp=0.jpg', '1', 2, NULL, NULL, '2020-11-21 15:54:47', 1, '2020-11-22 22:45:51', 1, 1);
 COMMIT;
 
 -- ----------------------------
