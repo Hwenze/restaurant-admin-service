@@ -116,14 +116,20 @@ const mkdir = (dirName) => {
     }
 }
 
-const createOrderId = () => {
+// 生成id
+const createOrderId = (admin_id = '') => {
     const nowTime = new Date();
-    // 随机数
-    const random = parseInt(Math.random(1000) * 1000);
-    // 年月日
-    const day = `${nowTime.getFullYear()}${nowTime.getMonth() + 1}${nowTime.getDate() > 10 ? nowTime.getDate() : '0' + nowTime.getDate()}`;
     // 订单id
-    const order_id = `${day}${nowTime.getHours() * 3600 + nowTime.getMinutes() * 60 + nowTime.getSeconds()}${random}`;
+    const Y = nowTime.getFullYear();
+    const M = nowTime.getMonth() > 8 ? nowTime.getMonth() + 1 : '0' + (nowTime.getMonth() + 1);
+    const D = nowTime.getDate() > 9 ? nowTime.getDate() : '0' + nowTime.getDate();
+    const h = nowTime.getHours() > 9 ? nowTime.getHours() : '0' + nowTime.getHours();
+    const m = nowTime.getMinutes() > 9 ? nowTime.getMinutes() : '0' + nowTime.getMinutes();
+    const s = nowTime.getSeconds() > 9 ? nowTime.getSeconds() : '0' + nowTime.getSeconds();
+    // 随机数
+    let ss = parseInt(Math.random(1000) * 1000);
+    ss = ss > 99 ? ss : ss > 9 ? `0${ss}` : `00${ss}`
+    const order_id = parseInt(`${admin_id}${Y}${M}${D}${h}${m}${s}${ss}`);
     return order_id;
 }
 
