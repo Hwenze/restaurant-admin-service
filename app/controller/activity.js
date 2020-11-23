@@ -41,7 +41,7 @@ class ActivityController extends Controller {
         const { ctx } = this;
         const isPass = {
             number: [],
-            string: ['title', 'introduce', 'star_time', 'end_time', 'content']
+            string: ['picture', 'title', 'star_time', 'end_time', 'content']
         }
         const query = filterQuery(ctx.request.body, isPass);
         const { title, star_time, introduce, end_time, content } = query.column;
@@ -88,7 +88,7 @@ class ActivityController extends Controller {
         const { ctx } = this;
         const isPass = {
             number: ['id'],
-            string: ['title', 'introduce', 'star_time', 'end_time', 'content']
+            string: ['picture', 'title', 'star_time', 'end_time', 'content']
         }
         const query = filterQuery(ctx.request.body, isPass);
         const { id, title, introduce, star_time, end_time, content } = query.column;

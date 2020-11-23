@@ -103,7 +103,7 @@ class CommonController extends Controller {
         }
     }
 
-    // 更改活动资讯
+    // 更改首页轮播
     async updateRotationDateils() {
         const { ctx } = this;
         const isPass = {
