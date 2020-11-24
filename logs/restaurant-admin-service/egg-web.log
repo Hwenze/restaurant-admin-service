@@ -9083,3 +9083,54 @@
 2020-11-22 23:15:03,322 INFO 7292 [egg-watcher:application] watcher start success
 2020-11-22 23:15:03,325 INFO 7292 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 22 2020 23:15:03 GMT+0800 (GMT+08:00)
 2020-11-22 23:15:03,330 INFO 7292 [egg:core] dump config after ready, 4ms
+2020-11-23 10:02:18,670 INFO 698 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-23 10:02:18,702 INFO 698 [egg-multipart] stream mode enable
+2020-11-23 10:02:18,702 INFO 698 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-23 10:02:18,893 INFO 698 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-23 10:02:18,895 INFO 698 [egg-security] use methodnoallow middleware
+2020-11-23 10:02:18,896 INFO 698 [egg-security] use noopen middleware
+2020-11-23 10:02:18,897 INFO 698 [egg-security] use nosniff middleware
+2020-11-23 10:02:18,897 INFO 698 [egg-security] use xssProtection middleware
+2020-11-23 10:02:18,897 INFO 698 [egg-security] use xframe middleware
+2020-11-23 10:02:18,898 INFO 698 [egg-security] use dta middleware
+2020-11-23 10:02:18,898 INFO 698 [egg-security] compose 6 middlewares into one security middleware
+2020-11-23 10:02:18,921 INFO 698 [egg:core] dump config after load, 6ms
+2020-11-23 10:02:18,936 INFO 698 [egg-watcher:application] watcher start success
+2020-11-23 10:02:18,940 INFO 698 [egg-mysql] instance[0] status OK, rds currentTime: Mon Nov 23 2020 10:02:18 GMT+0800 (GMT+08:00)
+2020-11-23 10:02:18,946 INFO 698 [egg:core] dump config after ready, 4ms
+2020-11-23 10:06:07,633 WARN 698 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-11-23 10:12:42,502 WARN 698 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-11-23 10:12:42,502 WARN 698 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-11-23 10:21:24,764 WARN 698 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-11-23 10:21:24,764 WARN 698 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-11-23 10:23:39,649 INFO 1051 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-23 10:23:39,674 INFO 1051 [egg-multipart] stream mode enable
+2020-11-23 10:23:39,675 INFO 1051 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-23 10:23:39,758 INFO 1051 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-23 10:23:39,760 INFO 1051 [egg-security] use methodnoallow middleware
+2020-11-23 10:23:39,760 INFO 1051 [egg-security] use noopen middleware
+2020-11-23 10:23:39,761 INFO 1051 [egg-security] use nosniff middleware
+2020-11-23 10:23:39,761 INFO 1051 [egg-security] use xssProtection middleware
+2020-11-23 10:23:39,761 INFO 1051 [egg-security] use xframe middleware
+2020-11-23 10:23:39,761 INFO 1051 [egg-security] use dta middleware
+2020-11-23 10:23:39,761 INFO 1051 [egg-security] compose 6 middlewares into one security middleware
+2020-11-23 10:23:39,779 INFO 1051 [egg:core] dump config after load, 4ms
+2020-11-23 10:23:39,794 INFO 1051 [egg-watcher:application] watcher start success
+2020-11-23 10:23:39,797 INFO 1051 [egg-mysql] instance[0] status OK, rds currentTime: Mon Nov 23 2020 10:23:39 GMT+0800 (GMT+08:00)
+2020-11-23 10:23:39,802 INFO 1051 [egg:core] dump config after ready, 4ms
+2020-11-24 14:04:30,202 INFO 4994 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-24 14:04:30,229 INFO 4994 [egg-multipart] stream mode enable
+2020-11-24 14:04:30,229 INFO 4994 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-24 14:04:30,395 INFO 4994 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-24 14:04:30,397 INFO 4994 [egg-security] use methodnoallow middleware
+2020-11-24 14:04:30,398 INFO 4994 [egg-security] use noopen middleware
+2020-11-24 14:04:30,398 INFO 4994 [egg-security] use nosniff middleware
+2020-11-24 14:04:30,398 INFO 4994 [egg-security] use xssProtection middleware
+2020-11-24 14:04:30,398 INFO 4994 [egg-security] use xframe middleware
+2020-11-24 14:04:30,399 INFO 4994 [egg-security] use dta middleware
+2020-11-24 14:04:30,399 INFO 4994 [egg-security] compose 6 middlewares into one security middleware
+2020-11-24 14:04:30,416 INFO 4994 [egg:core] dump config after load, 5ms
+2020-11-24 14:04:30,431 INFO 4994 [egg-watcher:application] watcher start success
+2020-11-24 14:04:30,436 INFO 4994 [egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 14:04:30 GMT+0800 (GMT+08:00)
+2020-11-24 14:04:30,443 INFO 4994 [egg:core] dump config after ready, 6ms
+2020-11-24 14:28:26,734 WARN 4994 [ClusterClient:Watcher] follower closed, and try to init it again

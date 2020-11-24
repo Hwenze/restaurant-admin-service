@@ -2146,3 +2146,73 @@ hostname: fanhongkaideMacBook-Pro.local
 2020-11-22 23:14:46,300 WARN 1546 [agent:development] reload worker because /Volumes/projects/restaurant-admin-service/app/utils/index.js change
 2020-11-22 23:15:02,153 INFO 1546 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Volumes/projects/restaurant-admin-service/app/controller/order.js","stat":{"dev":16777226,"mode":33188,"nlink":1,"uid":501,"gid":80,"rdev":0,"blksize":4096,"ino":1145968,"size":1566,"blocks":8,"atimeMs":1606052089433.1409,"mtimeMs":1606058102092.606,"ctimeMs":1606058102092.606,"birthtimeMs":1606032086400.0017,"atime":"2020-11-22T13:34:49.433Z","mtime":"2020-11-22T15:15:02.093Z","ctime":"2020-11-22T15:15:02.093Z","birthtime":"2020-11-22T08:01:26.400Z"},"remove":false,"isDirectory":false,"isFile":true}
 2020-11-22 23:15:02,355 WARN 1546 [agent:development] reload worker because /Volumes/projects/restaurant-admin-service/app/controller/order.js change
+2020-11-23 10:02:17,586 INFO 696 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-23 10:02:17,600 INFO 696 [egg:core] dump config after load, 6ms
+2020-11-23 10:02:17,642 INFO 696 [egg-watcher] Start watching: ["/Volumes/projects/restaurant-admin-service/app","/Volumes/projects/restaurant-admin-service/config","/Volumes/projects/restaurant-admin-service/mocks","/Volumes/projects/restaurant-admin-service/mocks_proxy","/Volumes/projects/restaurant-admin-service/app.js"]
+2020-11-23 10:02:17,642 INFO 696 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/app"
+2020-11-23 10:02:17,643 INFO 696 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/config"
+2020-11-23 10:02:17,643 INFO 696 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/mocks"
+2020-11-23 10:02:17,643 INFO 696 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/mocks_proxy"
+2020-11-23 10:02:17,643 INFO 696 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/app.js"
+2020-11-23 10:02:17,643 INFO 696 [egg-watcher:agent] watcher start success
+2020-11-23 10:02:17,692 INFO 696 [egg:core] dump config after ready, 7ms
+2020-11-23 10:06:07,634 ERROR 696 nodejs.ClusterClientNoResponseError: client no response in 88667ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 696
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-23 10:12:42,502 ERROR 696 nodejs.ClusterClientNoResponseError: client no response in 134821ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 696
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-23 10:21:24,764 ERROR 696 nodejs.ClusterClientNoResponseError: client no response in 362242ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 696
+hostname: fanhongkaideMacBook-Pro.local
+
+2020-11-23 10:23:38,737 INFO 1038 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-23 10:23:38,746 INFO 1038 [egg:core] dump config after load, 4ms
+2020-11-23 10:23:38,778 INFO 1038 [egg-watcher] Start watching: ["/Volumes/projects/restaurant-admin-service/app","/Volumes/projects/restaurant-admin-service/config","/Volumes/projects/restaurant-admin-service/mocks","/Volumes/projects/restaurant-admin-service/mocks_proxy","/Volumes/projects/restaurant-admin-service/app.js"]
+2020-11-23 10:23:38,778 INFO 1038 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/app"
+2020-11-23 10:23:38,779 INFO 1038 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/config"
+2020-11-23 10:23:38,779 INFO 1038 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/mocks"
+2020-11-23 10:23:38,779 INFO 1038 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/mocks_proxy"
+2020-11-23 10:23:38,779 INFO 1038 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/app.js"
+2020-11-23 10:23:38,779 INFO 1038 [egg-watcher:agent] watcher start success
+2020-11-23 10:23:38,789 INFO 1038 [egg:core] dump config after ready, 4ms
+2020-11-24 14:04:29,312 INFO 4993 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-11-24 14:04:29,322 INFO 4993 [egg:core] dump config after load, 4ms
+2020-11-24 14:04:29,362 INFO 4993 [egg-watcher] Start watching: ["/Volumes/projects/restaurant-admin-service/app","/Volumes/projects/restaurant-admin-service/config","/Volumes/projects/restaurant-admin-service/mocks","/Volumes/projects/restaurant-admin-service/mocks_proxy","/Volumes/projects/restaurant-admin-service/app.js"]
+2020-11-24 14:04:29,362 INFO 4993 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/app"
+2020-11-24 14:04:29,363 INFO 4993 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/config"
+2020-11-24 14:04:29,363 INFO 4993 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/mocks"
+2020-11-24 14:04:29,363 INFO 4993 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/mocks_proxy"
+2020-11-24 14:04:29,363 INFO 4993 [egg-watcher] Start watching: "/Volumes/projects/restaurant-admin-service/app.js"
+2020-11-24 14:04:29,363 INFO 4993 [egg-watcher:agent] watcher start success
+2020-11-24 14:04:29,374 INFO 4993 [egg:core] dump config after ready, 5ms
+2020-11-24 14:28:26,737 ERROR 4993 nodejs.ClusterClientNoResponseError: client no response in 676130ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Volumes/projects/restaurant-admin-service/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 4993
+hostname: fanhongkaideMacBook-Pro.local
+
