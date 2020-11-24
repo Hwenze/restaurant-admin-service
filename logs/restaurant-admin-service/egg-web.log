@@ -9134,3 +9134,18 @@
 2020-11-24 14:04:30,436 INFO 4994 [egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 14:04:30 GMT+0800 (GMT+08:00)
 2020-11-24 14:04:30,443 INFO 4994 [egg:core] dump config after ready, 6ms
 2020-11-24 14:28:26,734 WARN 4994 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-11-24 14:34:05,644 INFO 7318 [egg:logger] init all loggers with options: {"dir":"/Volumes/projects/restaurant-admin-service/logs/restaurant-admin-service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"restaurant-admin-service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-24 14:34:05,676 INFO 7318 [egg-multipart] stream mode enable
+2020-11-24 14:34:05,677 INFO 7318 [egg-mysql] connecting root@localhost:3306/restaurant
+2020-11-24 14:34:05,849 INFO 7318 [egg-static] starting static serve /public/ -> /Volumes/projects/restaurant-admin-service/app/public
+2020-11-24 14:34:05,851 INFO 7318 [egg-security] use methodnoallow middleware
+2020-11-24 14:34:05,852 INFO 7318 [egg-security] use noopen middleware
+2020-11-24 14:34:05,853 INFO 7318 [egg-security] use nosniff middleware
+2020-11-24 14:34:05,853 INFO 7318 [egg-security] use xssProtection middleware
+2020-11-24 14:34:05,854 INFO 7318 [egg-security] use xframe middleware
+2020-11-24 14:34:05,855 INFO 7318 [egg-security] use dta middleware
+2020-11-24 14:34:05,855 INFO 7318 [egg-security] compose 6 middlewares into one security middleware
+2020-11-24 14:34:05,882 INFO 7318 [egg:core] dump config after load, 6ms
+2020-11-24 14:34:05,902 INFO 7318 [egg-watcher:application] watcher start success
+2020-11-24 14:34:05,904 INFO 7318 [egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 14:34:05 GMT+0800 (GMT+08:00)
+2020-11-24 14:34:05,910 INFO 7318 [egg:core] dump config after ready, 4ms

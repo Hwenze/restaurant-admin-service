@@ -1783,3 +1783,6 @@
 2020-11-24 14:04:30,451 INFO 4993 [Timer] /Volumes/projects/restaurant-admin-service/node_modules/_egg-multipart@2.10.3@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 51929552ms at 2020-11-25 04:30:00.003
 2020-11-24 14:04:30,451 INFO 4993 [Timer] /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 35729549ms at 2020-11-25 00:00:00.000
 2020-11-24 14:04:30,452 INFO 4993 [Timer] /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 35730549ms at 2020-11-25 00:00:01.001
+2020-11-24 14:34:05,676 INFO 7318 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-multipart@2.10.3@egg-multipart/app/schedule/clean_tmpdir.js
+2020-11-24 14:34:05,676 INFO 7318 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2020-11-24 14:34:05,676 INFO 7318 [egg-schedule]: register schedule /Volumes/projects/restaurant-admin-service/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js

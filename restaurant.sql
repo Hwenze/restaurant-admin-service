@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 22/11/2020 23:00:38
+ Date: 24/11/2020 14:45:45
 */
 
 SET NAMES utf8mb4;
@@ -23,14 +23,14 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `admin_category`;
 CREATE TABLE `admin_category` (
   `id` int NOT NULL AUTO_INCREMENT COMMENT '分类id',
-  `name` varchar(50) DEFAULT NULL COMMENT '分类名称',
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '分类名称',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `operator` int DEFAULT NULL COMMENT '操作者',
   `sort` int DEFAULT '1' COMMENT '排序',
   `status` int DEFAULT '1' COMMENT '状态',
   `desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '说明',
   `admin_id` int DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
+  `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='商品分类';
 
@@ -61,7 +61,7 @@ CREATE TABLE `admin_role` (
 -- Records of admin_role
 -- ----------------------------
 BEGIN;
-INSERT INTO `admin_role` VALUES (1, '店主', 1, '2020-11-12 15:14:27', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23', 1);
+INSERT INTO `admin_role` VALUES (1, '店主', 1, '2020-11-12 15:14:27', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24', 1);
 INSERT INTO `admin_role` VALUES (2, '文泽大保健的店小二', 1, '2020-11-17 11:15:50', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16', 0);
 INSERT INTO `admin_role` VALUES (999, '游客', 0, '2020-11-14 13:50:48', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15', 1);
 COMMIT;
@@ -79,7 +79,7 @@ CREATE TABLE `admin_router` (
   `status` int DEFAULT '1' COMMENT '1:正常，0:禁用',
   `parent_id` int DEFAULT '0' COMMENT '父级id，0为根节点',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of admin_router
@@ -108,6 +108,7 @@ INSERT INTO `admin_router` VALUES (20, '/activity', '活动模块', NULL, NULL, 
 INSERT INTO `admin_router` VALUES (21, '/activity/real-time-info', '活动资讯', NULL, NULL, 1, 20);
 INSERT INTO `admin_router` VALUES (22, '/activity/real-time-info/detail', '活动资讯详情', NULL, NULL, 1, 20);
 INSERT INTO `admin_router` VALUES (23, '/other/home-rotation', '首页轮播', NULL, NULL, 1, 17);
+INSERT INTO `admin_router` VALUES (24, '/other/home-rotation/details', '首页轮播编辑', NULL, NULL, 1, 17);
 COMMIT;
 
 -- ----------------------------
@@ -145,6 +146,7 @@ CREATE TABLE `home_rotation` (
   `path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '关联路径',
   `status` int NOT NULL COMMENT '1:显示0:隐藏',
   `sort` int NOT NULL COMMENT '权重排序',
+  `admin_id` int DEFAULT NULL COMMENT '店ID',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
@@ -152,12 +154,12 @@ CREATE TABLE `home_rotation` (
 -- Records of home_rotation
 -- ----------------------------
 BEGIN;
-INSERT INTO `home_rotation` VALUES (1, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 1);
-INSERT INTO `home_rotation` VALUES (2, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 2);
-INSERT INTO `home_rotation` VALUES (3, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 3);
-INSERT INTO `home_rotation` VALUES (4, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 0, 4);
-INSERT INTO `home_rotation` VALUES (5, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 5);
-INSERT INTO `home_rotation` VALUES (6, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 0, 6);
+INSERT INTO `home_rotation` VALUES (1, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 1, 1);
+INSERT INTO `home_rotation` VALUES (2, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 2, 1);
+INSERT INTO `home_rotation` VALUES (3, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 3, 1);
+INSERT INTO `home_rotation` VALUES (4, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 0, 4, 1);
+INSERT INTO `home_rotation` VALUES (5, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 1, 5, 1);
+INSERT INTO `home_rotation` VALUES (6, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', NULL, 0, 6, 1);
 COMMIT;
 
 -- ----------------------------
@@ -189,7 +191,7 @@ CREATE TABLE `order` (
   `total_price` double DEFAULT '0' COMMENT '订单总额',
   `real_price` double DEFAULT '0' COMMENT '实付金额',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '下单时间',
-  `status` int DEFAULT NULL COMMENT '订单状态',
+  `status` int DEFAULT '0' COMMENT '订单状态',
   `member_id` int DEFAULT NULL COMMENT '用户id',
   `remark` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '备注',
   `table_num` int DEFAULT NULL COMMENT '座位号',
@@ -198,14 +200,15 @@ CREATE TABLE `order` (
   `admin_id` int DEFAULT NULL,
   `order_id` bigint DEFAULT NULL,
   `tea_price` double DEFAULT NULL COMMENT '茶位费',
+  `product_price` double DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单表';
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单表';
 
 -- ----------------------------
 -- Records of order
 -- ----------------------------
 BEGIN;
-INSERT INTO `order` VALUES (1, 12, 12, '2020-11-22 18:41:14', 0, 1, NULL, 1, 2, NULL, 1, 2020112267200950, 4);
+INSERT INTO `order` VALUES (9, 30, 30, '2020-11-24 14:44:09', 0, 1, '', 1, 2, NULL, 1, 120201124144409140, 4, 26);
 COMMIT;
 
 -- ----------------------------
@@ -222,14 +225,16 @@ CREATE TABLE `order_snapshot` (
   `price` double DEFAULT '0' COMMENT '快照单价',
   `total_price` double DEFAULT '0',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单商品快照';
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单商品快照';
 
 -- ----------------------------
 -- Records of order_snapshot
 -- ----------------------------
 BEGIN;
-INSERT INTO `order_snapshot` VALUES (1, 1, 1, 2, '可口可乐', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606066317983&di=835aa7b8d8f7ca520bc921f0013ffe6a&imgtype=0&src=http%3A%2F%2F4888152.s21i-4.faidns.com%2F2%2FABUIABACGAAgzvv_pQUog7udqwQwrAI4rAI.jpg', 3, 6);
-INSERT INTO `order_snapshot` VALUES (2, 1, 2, 1, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3987685708,3519441173&fm=26&gp=0.jpg', 2, 2);
+INSERT INTO `order_snapshot` VALUES (14, 9, 4, 1, '红烧排骨', 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3438952604,626888534&fm=26&gp=0.jpg', 2, 2);
+INSERT INTO `order_snapshot` VALUES (15, 9, 1, 2, '可口可乐', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606066317983&di=835aa7b8d8f7ca520bc921f0013ffe6a&imgtype=0&src=http%3A%2F%2F4888152.s21i-4.faidns.com%2F2%2FABUIABACGAAgzvv_pQUog7udqwQwrAI4rAI.jpg', 3, 6);
+INSERT INTO `order_snapshot` VALUES (16, 9, 2, 4, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3987685708,3519441173&fm=26&gp=0.jpg', 2, 8);
+INSERT INTO `order_snapshot` VALUES (17, 9, 3, 5, '王老吉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1686637159,3901112649&fm=26&gp=0.jpg', 2, 10);
 COMMIT;
 
 -- ----------------------------
@@ -269,11 +274,12 @@ COMMIT;
 DROP TABLE IF EXISTS `real_time_info`;
 CREATE TABLE `real_time_info` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `picture` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '活动图片',
   `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '活动标题',
-  `introduce` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '活动介绍',
   `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT '活动内容',
   `star_time` timestamp NULL DEFAULT NULL COMMENT '活动开始时间',
   `end_time` timestamp NULL DEFAULT NULL COMMENT '活动结束时间',
+  `admin_id` int DEFAULT NULL COMMENT '店ID',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
@@ -281,12 +287,12 @@ CREATE TABLE `real_time_info` (
 -- Records of real_time_info
 -- ----------------------------
 BEGIN;
-INSERT INTO `real_time_info` VALUES (1, '测试1', '1', '11111111', '2020-11-19 14:27:36', '2020-11-20 14:27:41');
-INSERT INTO `real_time_info` VALUES (3, '测试3', '2', '33333333', '2020-11-20 14:39:04', '2020-11-21 14:39:08');
-INSERT INTO `real_time_info` VALUES (4, '发生', '3', '<p>发生吧</p>', '2020-11-19 00:00:00', '2020-11-20 00:00:00');
-INSERT INTO `real_time_info` VALUES (5, '哈哈', '4', '<p>发顺丰</p>', '2020-11-19 00:00:00', '2020-11-21 00:00:00');
-INSERT INTO `real_time_info` VALUES (6, '发生2223', '介绍5', '<p>2223</p>', '2020-11-21 00:00:00', '2020-11-22 00:00:00');
-INSERT INTO `real_time_info` VALUES (8, '新增1', '新增1新增1新增1', '<p>新增1新增1新增1新增1新增1</p>', '2020-11-20 00:00:00', '2020-11-29 00:00:00');
+INSERT INTO `real_time_info` VALUES (1, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '测试1', '11111111', '2020-11-19 14:27:36', '2020-11-20 14:27:41', 1);
+INSERT INTO `real_time_info` VALUES (3, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '测试3', '33333333', '2020-11-20 14:39:04', '2020-11-21 14:39:08', 1);
+INSERT INTO `real_time_info` VALUES (4, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '发生', '<p>发生吧</p>', '2020-11-19 00:00:00', '2020-11-20 00:00:00', 1);
+INSERT INTO `real_time_info` VALUES (5, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '哈哈', '<p>发顺丰</p>', '2020-11-19 00:00:00', '2020-11-21 00:00:00', 1);
+INSERT INTO `real_time_info` VALUES (6, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '发生2223', '<p>2223</p>', '2020-11-21 00:00:00', '2020-11-22 00:00:00', 1);
+INSERT INTO `real_time_info` VALUES (8, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '新增1', '<p>新增1新增1新增1新增1新增1</p>', '2020-11-20 00:00:00', '2020-11-29 00:00:00', 1);
 COMMIT;
 
 -- ----------------------------
@@ -296,6 +302,7 @@ DROP TABLE IF EXISTS `user_agreement`;
 CREATE TABLE `user_agreement` (
   `id` int NOT NULL AUTO_INCREMENT,
   `agreement` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT '用户协议',
+  `admin_id` int DEFAULT NULL COMMENT '店ID',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
@@ -303,7 +310,7 @@ CREATE TABLE `user_agreement` (
 -- Records of user_agreement
 -- ----------------------------
 BEGIN;
-INSERT INTO `user_agreement` VALUES (1, '<p>飞洒发撒发是34</p><p style=\"text-align:center;\">法法</p>');
+INSERT INTO `user_agreement` VALUES (1, '<p>飞洒发撒发是34</p><p style=\"text-align:center;\">法法</p>', 1);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
