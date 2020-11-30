@@ -8,5 +8,6 @@ module.exports = app => {
   const jwt = middleware.tokenHandler(app.config.jwt);
   router.get('/order/getOrderList', jwt, controller.order.queryOrderListByAdminId);
   router.get('/order/getOrderInfo/:id', jwt, controller.order.queryOrderInfoByOrderId);
+  router.get('/order/getOrderStatusCount', jwt, controller.order.queryUnFinishOrderCountByAdminId);
 };
 

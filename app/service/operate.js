@@ -66,7 +66,22 @@ class OperateService extends Service {
       where: { status: 1, id: ids }, // WHERE 条件
       orders: [['id', 'desc']], // 排序方式
     });
+  }
 
+  // 根据router_ids查询菜单
+  async queryShopInfoByAdminId(id) {
+    const { app } = this;
+    return await app.mysql.get('admin_info', id);
+  }
+
+  // 根据router_ids查询菜单
+  async updateShopInfoByAdminId(column) {
+    const { app } = this;
+    const { id, ...query } = column;
+    const result = await app.mysql.update('admin_info', { ...query }, {
+      where: { id }, // WHERE 条件
+    });
+    return result.affectedRows === 1;
   }
 
 }

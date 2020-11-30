@@ -19,8 +19,6 @@ class UserController extends Controller {
     }
   }
 
-
-
   // 冻结 or 解冻用户
   async changeUserStatus() {
     const { ctx } = this;

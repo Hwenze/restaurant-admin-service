@@ -55,6 +55,12 @@ class OrderService extends Service {
     };
   }
 
+  async queryUnFinishOrderCountByAdminId(admin_id){
+    const { ctx, app } = this;
+    const total = await app.mysql.count('order', { admin_id,status:0 });
+    return total || 0;
+  }
+
 }
 
 module.exports = OrderService;

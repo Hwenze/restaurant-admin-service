@@ -43,8 +43,9 @@ class HomeController extends Controller {
             nickname: result.nickname,
             role: result.role_id,
             user_id: result.id,
-            admin_id: result.admin_id
+            // admin_id: result.admin_id
           }
+          const shopInfo = await ctx.service.operate.queryShopInfoByAdminId(result.admin_id);
           // 生成token
           const token = app.jwt.sign({ username: result.username, id: result.id }, app.config.jwt.secret, { expiresIn: '7 days' }); // 2分钟token过期
           userinfo.token = token;
@@ -62,7 +63,8 @@ class HomeController extends Controller {
             data: {
               userinfo: {
                 ...userinfo,
-                roleName: userConfig.roleInfo.name
+                roleName: userConfig.roleInfo.name,
+                shop_name:shopInfo.shop_name,
               },
               menuList: userConfig.menuInfo
             }

@@ -5,12 +5,12 @@ const { RETURN_CODE } = require('../utils/enum');
 
 module.exports = (options, app) => {
     return async function (ctx, next) {
+        console.log('ctx');
         const token = ctx.request.header.authorization;
         console.log('token',token);
         if (token) {
             try {
-                ctx.app.jwt.verify(token, options.secret); // 验证token 
-
+                ctx.app.jwt.verify(token, options.secret); // 验证token
                 await next();
             } catch (error) {
                 ctx.body = cb({ code: 401, msg: RETURN_CODE['401'] });

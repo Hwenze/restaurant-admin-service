@@ -18,5 +18,11 @@ module.exports = app => {
   router.post('/operate/deleRole', jwt, controller.operate.deleteRoleById);
   router.post('/operate/changeRoleStatus', jwt, controller.operate.changeRoleStatus);
   router.get('/operate/getRoleInfo',jwt,controller.operate.queryRoleInfoById);
+
+
+  // 店铺信息
+  
+  router.get('/operate/getShopInfo', jwt, controller.operate.queryShopInfoByAdminId);
+  router.post('/operate/updateShopInfo', jwt, controller.operate.updateShopInfoByAdminId);
 };
 

@@ -38,6 +38,13 @@ class OrderController extends Controller {
       ctx.body = cb({ msg: '订单不存在', code: 500 });
     }
   }
+  // 查询未完成的订单数量
+  async queryUnFinishOrderCountByAdminId() {
+    const { ctx } = this;
+    const { admin_id = '' } = await ctx.service.common.getUserInfo();
+    const count = await ctx.service.order.queryUnFinishOrderCountByAdminId(admin_id);
+    return ctx.body = cb({ data: { count } });
+  }
 }
 
 module.exports = OrderController;

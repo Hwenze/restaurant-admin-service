@@ -19,10 +19,10 @@ module.exports = appInfo => {
 
   // 上传地址
   config.uploadUrl = {
-    image:'/app/public/image/',
-    file:'/app/public/file/',
+    image: '/app/public/image/',
+    file: '/app/public/file/',
   }
-  
+
   // 中间件
   config.middleware = ['errorHandler'];
 

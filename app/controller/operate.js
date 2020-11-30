@@ -169,15 +169,48 @@ class OperateController extends Controller {
         let menuList = await ctx.service.operate.queryMenuByRouteIds(ids);
         // console.log('menuList',menuList);
         roleInfo.routerList = TREE(menuList);
-        roleInfo.router_ids = ids.map(item=>parseInt(item));
+        roleInfo.router_ids = ids.map(item => parseInt(item));
         //3 根据菜单id查询资源
         ctx.body = cb({ data: roleInfo });
       }
     } else {
       ctx.body = cb({ code: 500, msg: '用户不存在' });
     }
+  }
 
+  //获取店铺信息
+  async queryShopInfoByAdminId() {
+    const { ctx } = this;
+    const { admin_id = '' } = await ctx.service.common.getUserInfo();
+    let adminInfo = await ctx.service.operate.queryShopInfoByAdminId(admin_id);
+    if (adminInfo) {
+      delete adminInfo.id;
+      ctx.body = cb({
+        data: {
+          ...adminInfo,
+          shop_status: adminInfo.shop_status === 1 ? true : false
+        }
+      });
+    } else {
+      ctx.body = cb({ code: 500, msg: '店铺不存在' });
+    }
+  }
 
+  // 修改店铺信息
+  async updateShopInfoByAdminId() {
+    const { ctx } = this;
+    const { admin_id = '' } = await ctx.service.common.getUserInfo();
+    const isPass = {
+      number: ['shop_status', 'shop_user_id'],
+      string: ['shop_name', 'shop_background', 'shop_avatar', 'shop_desc']
+    }
+    let { column } = filterQuery(ctx.request.body, isPass);
+    let adminInfo = await ctx.service.operate.updateShopInfoByAdminId({ id: admin_id, ...column });
+    if (adminInfo) {
+      ctx.body = cb({ msg: '修改成功' });
+    } else {
+      ctx.body = cb({ code: 500, msg: '修改失败' });
+    }
   }
 }
 
