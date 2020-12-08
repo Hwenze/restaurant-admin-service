@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 03/12/2020 19:18:46
+ Date: 08/12/2020 17:24:55
 */
 
 SET NAMES utf8mb4;
@@ -45,25 +45,24 @@ INSERT INTO `admin_category` VALUES (3, '麻辣', '2020-11-20 17:34:33', 1, 1, 1
 -- Table structure for admin_info
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_info`;
-CREATE TABLE `admin_info` (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT '店铺id',
-  `shop_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '店铺名称',
-  `shop_avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '店铺头像',
-  `shop_user_id` int DEFAULT NULL COMMENT '店长id',
-  `shop_desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '店铺说明',
-  `shop_status` int DEFAULT '1' COMMENT '店铺状态',
-  `shop_background` varchar(255) DEFAULT NULL COMMENT '店铺背景',
-  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `admin_info`  (
+  `id` int(0) NOT NULL AUTO_INCREMENT COMMENT '店铺id',
+  `shop_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '店铺名称',
+  `shop_avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '店铺头像',
+  `shop_user_id` int(0) NULL DEFAULT NULL COMMENT '店长id',
+  `shop_desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '店铺说明',
+  `shop_status` int(0) NULL DEFAULT 1 COMMENT '店铺状态',
+  `sort` int(0) UNSIGNED NULL DEFAULT NULL COMMENT '店铺排序',
+  `shop_background` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '店铺背景',
+  `create_time` timestamp(0) NULL DEFAULT CURRENT_TIMESTAMP(0),
+  `update_time` timestamp(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0),
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of admin_info
 -- ----------------------------
-BEGIN;
-INSERT INTO `admin_info` VALUES (1, '隆江猪脚饭', 'http://scg-admin-service.fhk255.cn/app/public/20201130/16067276639056d1eeuzv.png', 1, '广东正宗隆江猪脚饭', 1, NULL, '2020-11-30 16:31:49', '2020-11-30 17:14:43');
-COMMIT;
+INSERT INTO `admin_info` VALUES (1, '徐闻粤皇楼', 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', 1, '广东徐闻正宗粤皇楼', 1, 3, 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2313222484,1037127654&fm=26&gp=0.jpg', '2020-11-30 16:31:49', '2020-12-08 15:34:14');
 
 -- ----------------------------
 -- Table structure for admin_role
@@ -90,16 +89,16 @@ INSERT INTO `admin_role` VALUES (999, '游客', 0, '2020-11-14 13:50:48', '1,2,3
 -- Table structure for admin_router
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_router`;
-CREATE TABLE `admin_router` (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT '页面ID',
-  `router_path` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '页面地址',
-  `router_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '页面名称',
-  `router_icon` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '页面图标',
-  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `status` int DEFAULT '1' COMMENT '1:正常，0:禁用',
-  `parent_id` int DEFAULT '0' COMMENT '父级id，0为根节点',
+CREATE TABLE `admin_router`  (
+  `id` int(0) NOT NULL AUTO_INCREMENT COMMENT '页面ID',
+  `router_path` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '页面地址',
+  `router_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '页面名称',
+  `router_icon` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '页面图标',
+  `create_time` timestamp(0) NULL DEFAULT CURRENT_TIMESTAMP(0) COMMENT '创建时间',
+  `status` int(0) NULL DEFAULT 1 COMMENT '1:正常，0:禁用',
+  `parent_id` int(0) NULL DEFAULT 0 COMMENT '父级id，0为根节点',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of admin_router
@@ -129,7 +128,6 @@ INSERT INTO `admin_router` VALUES (22, '/activity/real-time-info/detail', '活�
 INSERT INTO `admin_router` VALUES (23, '/other/home-rotation', '首页轮播', NULL, NULL, 1, 17);
 INSERT INTO `admin_router` VALUES (24, '/other/home-rotation/details', '首页轮播编辑', NULL, NULL, 1, 17);
 INSERT INTO `admin_router` VALUES (25, '/operate/shop', '店铺配置', NULL, '2020-11-30 15:17:16', 1, 1);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for admin_userinfo
@@ -138,24 +136,22 @@ DROP TABLE IF EXISTS `admin_userinfo`;
 CREATE TABLE `admin_userinfo`  (
   `id` int(0) NOT NULL AUTO_INCREMENT,
   `username` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `nickname` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT 'e10adc3949ba59abbe56e057f20f883e',
-  `role` int DEFAULT NULL COMMENT '用户权限',
-  `admin_id` int DEFAULT NULL COMMENT '店id',
-  `status` int DEFAULT '1' COMMENT '1:正常0:冻结',
-  `avatar` varchar(255) DEFAULT NULL,
+  `nickname` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+  `create_time` timestamp(0) NULL DEFAULT CURRENT_TIMESTAMP(0),
+  `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT 'e10adc3949ba59abbe56e057f20f883e',
+  `role` int(0) NULL DEFAULT NULL COMMENT '用户权限',
+  `admin_id` int(0) NULL DEFAULT NULL COMMENT '店id',
+  `status` int(0) NULL DEFAULT 1 COMMENT '1:正常0:冻结',
+  `avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of admin_userinfo
 -- ----------------------------
-BEGIN;
 INSERT INTO `admin_userinfo` VALUES (1, 'admin', 'admin', '2020-11-11 15:46:22', 'e10adc3949ba59abbe56e057f20f883e', 1, 1, 1, NULL);
 INSERT INTO `admin_userinfo` VALUES (2, 'joker', '文泽大保健店小二', '2020-11-17 11:14:44', 'e10adc3949ba59abbe56e057f20f883e', 2, 2, 1, NULL);
 INSERT INTO `admin_userinfo` VALUES (3, 'test', '技师8号', '2020-11-21 15:06:21', '6ac1e56bc78f031059be7be854522c4c', 2, 1, 1, NULL);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for home_rotation
@@ -218,20 +214,22 @@ CREATE TABLE `order`  (
   `order_id` bigint(0) NULL DEFAULT NULL,
   `tea_price` double NULL DEFAULT NULL COMMENT '茶位费',
   `product_price` double NULL DEFAULT NULL,
+  `shop_id` int(0) NOT NULL COMMENT '店铺ID',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单表';
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci COMMENT = '订单表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of order
 -- ----------------------------
-INSERT INTO `order` VALUES (9, 30, 30, '2020-11-24 14:44:09', 0, 1, '', 1, 2, NULL, 1, 120201124144409140, 4, 26);
-INSERT INTO `order` VALUES (10, 20, 20, '2020-11-29 18:02:08', 0, 1, '', 1, 1, NULL, 1, 120201129180208030, 2, 18);
-INSERT INTO `order` VALUES (11, 20, 20, '2020-11-29 18:04:39', 0, 1, '', 1, 1, NULL, 1, 120201129180439220, 2, 18);
-INSERT INTO `order` VALUES (12, 20, 20, '2020-11-29 18:13:06', 0, 1, '', 1, 1, NULL, 1, 120201129181306100, 2, 18);
-INSERT INTO `order` VALUES (13, 20, 20, '2020-11-29 18:13:07', 0, 1, '', 1, 1, NULL, 1, 120201129181307280, 2, 18);
-INSERT INTO `order` VALUES (14, 20, 20, '2020-11-29 18:14:14', 0, 1, '', 1, 1, NULL, 1, 120201129181414300, 2, 18);
-INSERT INTO `order` VALUES (15, 20, 20, '2020-11-29 18:39:52', 0, 1, '', 1, 1, NULL, 1, 120201129183952430, 2, 18);
-COMMIT;
+INSERT INTO `order` VALUES (9, 30, 30, '2020-11-24 14:44:09', 0, 1, '', 1, 2, NULL, 1, 120201124144409140, 4, 26, 1);
+INSERT INTO `order` VALUES (10, 20, 20, '2020-11-29 18:02:08', 0, 1, '', 1, 1, NULL, 1, 120201129180208030, 2, 18, 1);
+INSERT INTO `order` VALUES (11, 20, 20, '2020-11-29 18:04:39', 0, 1, '', 1, 1, NULL, 1, 120201129180439220, 2, 18, 1);
+INSERT INTO `order` VALUES (12, 20, 20, '2020-11-29 18:13:06', 0, 1, '', 1, 1, NULL, 1, 120201129181306100, 2, 18, 1);
+INSERT INTO `order` VALUES (13, 20, 20, '2020-11-29 18:13:07', 0, 1, '', 1, 1, NULL, 1, 120201129181307280, 2, 18, 1);
+INSERT INTO `order` VALUES (14, 20, 20, '2020-11-29 18:14:14', 0, 1, '', 1, 1, NULL, 1, 120201129181414300, 2, 18, 1);
+INSERT INTO `order` VALUES (15, 20, 20, '2020-11-29 18:39:52', 0, 1, '', 1, 1, NULL, 1, 120201129183952430, 2, 18, 1);
+INSERT INTO `order` VALUES (16, 17, 17, '2020-12-08 09:40:10', 0, 1, '哈哈', 1, 6, NULL, 1, 120201208094010270, 12, 5, 1);
+INSERT INTO `order` VALUES (17, 10, 10, '2020-12-08 14:55:36', 0, 1, '放散阀', 1, 3, NULL, 1, 120201208145536180, 6, 4, 1);
 
 -- ----------------------------
 -- Table structure for order_snapshot
@@ -247,7 +245,7 @@ CREATE TABLE `order_snapshot`  (
   `price` double NULL DEFAULT 0 COMMENT '快照单价',
   `total_price` double NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC COMMENT='订单商品快照';
+) ENGINE = InnoDB AUTO_INCREMENT = 44 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci COMMENT = '订单商品快照' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of order_snapshot
@@ -280,7 +278,10 @@ INSERT INTO `order_snapshot` VALUES (38, 15, 5, 1, '辣椒炒肉', 'https://ss0.
 INSERT INTO `order_snapshot` VALUES (39, 15, 1, 2, '可口可乐', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606066317983&di=835aa7b8d8f7ca520bc921f0013ffe6a&imgtype=0&src=http%3A%2F%2F4888152.s21i-4.faidns.com%2F2%2FABUIABACGAAgzvv_pQUog7udqwQwrAI4rAI.jpg', 3, 6);
 INSERT INTO `order_snapshot` VALUES (40, 15, 2, 3, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3987685708,3519441173&fm=26&gp=0.jpg', 2, 6);
 INSERT INTO `order_snapshot` VALUES (41, 15, 3, 2, '王老吉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1686637159,3901112649&fm=26&gp=0.jpg', 2, 4);
-COMMIT;
+INSERT INTO `order_snapshot` VALUES (42, 16, 2, 1, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3987685708,3519441173&fm=26&gp=0.jpg', 2, 2);
+INSERT INTO `order_snapshot` VALUES (43, 16, 1, 1, '可口可乐', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606066317983&di=835aa7b8d8f7ca520bc921f0013ffe6a&imgtype=0&src=http%3A%2F%2F4888152.s21i-4.faidns.com%2F2%2FABUIABACGAAgzvv_pQUog7udqwQwrAI4rAI.jpg', 3, 3);
+INSERT INTO `order_snapshot` VALUES (44, 17, 5, 1, '辣椒炒肉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1815888668,904241512&fm=26&gp=0.jpg', 2, 2);
+INSERT INTO `order_snapshot` VALUES (45, 17, 3, 1, '王老吉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1686637159,3901112649&fm=26&gp=0.jpg', 2, 2);
 
 -- ----------------------------
 -- Table structure for product
@@ -310,7 +311,6 @@ INSERT INTO `product` VALUES (2, '雪碧', 'https://ss1.bdstatic.com/70cFuXSh_Q1
 INSERT INTO `product` VALUES (3, '王老吉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1686637159,3901112649&fm=26&gp=0.jpg', '1', 2, NULL, NULL, '2020-11-20 15:09:20', 1, '2020-11-29 15:44:11', 1, 1);
 INSERT INTO `product` VALUES (4, '红烧排骨', 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3438952604,626888534&fm=26&gp=0.jpg', '2,1', 2, NULL, NULL, '2020-11-20 15:16:07', 1, '2020-11-22 22:45:13', 1, 0);
 INSERT INTO `product` VALUES (5, '辣椒炒肉', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1815888668,904241512&fm=26&gp=0.jpg', '1', 2, NULL, NULL, '2020-11-21 15:54:47', 1, '2020-11-22 22:45:51', 1, 1);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for real_time_info
